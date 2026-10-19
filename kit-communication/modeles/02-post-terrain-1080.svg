@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1080" height="1080" fill="#F8F8F6"/>
+<rect x="55" y="55" width="970" height="725" fill="#DCD9D2"/>
+<rect x="78" y="78" width="924" height="679" fill="none" stroke="#B4A99A" stroke-width="2" stroke-dasharray="15 12"/>
+<text x="335" y="382" class="sans" font-size="37" font-weight="700" fill="#132D59">PHOTO VALIDÉE</text>
+<text x="350" y="428" class="sans" font-size="22" fill="#5A5E65">lieu · date · crédit · autorisations</text>
+<rect x="55" y="780" width="970" height="245" fill="white"/>
+<text x="83" y="834" class="sans" font-size="23" font-weight="700" letter-spacing="4" fill="#8A5A2E">DANS L’INDRE</text>
+<text x="83" y="912" class="serif" font-size="68" fill="#132D59">[Commune] · [Sujet]</text>
+<text x="83" y="981" class="sans" font-size="21" font-weight="700" fill="#132D59">RÉGIS BLANCHET · SÉNATEUR DE L’INDRE</text>
+<text x="55" y="1056" class="sans" font-size="15" fill="#5A5E65">MODÈLE · NE PAS PUBLIER AVEC LES CHAMPS ENTRE CROCHETS</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1080" height="1080" fill="#F8F8F6"/>
+<rect x="55" y="55" width="970" height="970" fill="white" stroke="#DCD7D0" stroke-width="2"/>
+<text x="90" y="131" class="sans" font-size="26" font-weight="700" letter-spacing="4" fill="#8A5A2E">DOSSIER SUIVI / 01</text>
+<text x="90" y="292" class="serif" font-size="99" fill="#132D59">[Le sujet]</text>
+<rect x="90" y="337" width="900" height="5" fill="#BD8B57"/>
+<text x="90" y="446" class="serif" font-size="53" fill="#8A5A2E">01</text><text x="220" y="446" class="sans" font-size="42" font-weight="700" fill="#132D59">Le constat</text>
+<text x="90" y="572" class="serif" font-size="53" fill="#8A5A2E">02</text><text x="220" y="572" class="sans" font-size="42" font-weight="700" fill="#132D59">La démarche</text>
+<text x="90" y="698" class="serif" font-size="53" fill="#8A5A2E">03</text><text x="220" y="698" class="sans" font-size="42" font-weight="700" fill="#132D59">La suite</text>
+<line x1="90" y1="901" x2="990" y2="901" stroke="#DCD7D0" stroke-width="2"/>
+<text x="90" y="954" class="sans" font-size="23" font-weight="700" letter-spacing="2" fill="#132D59">RÉGIS BLANCHET · INDRE</text>
+<text x="55" y="1056" class="sans" font-size="15" fill="#5A5E65">MODÈLE · RENSEIGNER LES FAITS, LEUR DATE ET LEUR SOURCE</text>
+</svg>

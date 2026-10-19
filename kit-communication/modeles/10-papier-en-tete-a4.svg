@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1754" viewBox="0 0 1240 1754" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1240" height="1754" fill="white"/>
+<rect x="0" y="0" width="1240" height="18" fill="#132D59"/>
+<rect x="80" y="83" width="88" height="88" fill="#132D59"/>
+<text x="99" y="139" class="serif" font-size="45" fill="white">RB</text>
+<rect x="99" y="151" width="49" height="4" fill="#BD8B57"/>
+<text x="197" y="126" class="serif" font-size="58" fill="#132D59">Régis Blanchet</text>
+<text x="199" y="171" class="sans" font-size="23" font-weight="700" letter-spacing="4" fill="#8A5A2E">SÉNATEUR DE L’INDRE</text>
+<line x1="80" y1="222" x2="1160" y2="222" stroke="#D4CEC4" stroke-width="2"/>
+<text x="80" y="319" class="sans" font-size="28" fill="#5A5E65">[Date] · [Destinataire]</text>
+<text x="80" y="387" class="sans" font-size="28" font-weight="700" fill="#132D59">Objet : [objet du courrier]</text>
+<text x="80" y="509" class="sans" font-size="26" fill="#5A5E65">[Corps du courrier validé]</text>
+<line x1="80" y1="1613" x2="1160" y2="1613" stroke="#D4CEC4" stroke-width="2"/>
+<text x="80" y="1660" class="sans" font-size="21" fill="#132D59">[Coordonnées validées] · [Site validé]</text>
+<text x="80" y="1715" class="sans" font-size="18" fill="#5A5E65">MODÈLE DE TRAVAIL · RENSEIGNER L’EN-TÊTE ET LE PIED AVANT IMPRESSION</text>
+</svg>

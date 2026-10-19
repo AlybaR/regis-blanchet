@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1080" height="1080" fill="#132D59"/>
+<rect x="70" y="70" width="88" height="88" fill="white"/><text x="88" y="128" class="serif" font-size="48" fill="#132D59">RB</text><rect x="86" y="138" width="56" height="4" fill="#BD8B57"/>
+<text x="182" y="112" class="sans" font-size="34" font-weight="700" letter-spacing="3" fill="white">RÉGIS BLANCHET</text>
+<text x="182" y="150" class="sans" font-size="19" font-weight="700" letter-spacing="3" fill="#D5B894">SÉNATEUR DE L’INDRE</text>
+<text x="77" y="292" class="sans" font-size="23" font-weight="700" letter-spacing="3" fill="#D5B894">FAIT PUBLIC · 6 OCTOBRE 2026</text>
+<text x="72" y="435" class="serif" font-size="88" fill="white">Une commission pour</text>
+<text x="72" y="533" class="serif" font-size="88" fill="white">les territoires.</text>
+<rect x="75" y="587" width="130" height="5" fill="#BD8B57"/>
+<text x="75" y="661" class="sans" font-size="29" fill="white">Membre de la commission de l’aménagement</text>
+<text x="75" y="706" class="sans" font-size="29" fill="white">du territoire et du développement durable.</text>
+<line x1="75" y1="934" x2="1005" y2="934" stroke="#7990B0"/>
+<text x="75" y="987" class="sans" font-size="23" fill="white">Source : Sénat · senat.fr/senateurs/news.html</text>
+<text x="75" y="1032" class="sans" font-size="17" fill="#D5B894">MAQUETTE DE TRAVAIL · À VALIDER AVANT PUBLICATION</text>
+</svg>

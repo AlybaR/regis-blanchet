@@ -14,4 +14,4 @@ La publication de cet aperçu ne vaut pas validation d'un site officiel du manda
 
 Les [propositions éditoriales](PROPOSITIONS_EDITORIALES.md) donnent à l’équipe des exemples d’articles, de lettres et une trame de vérification pour la suite du site.
 
-La page [Trois pistes visuelles](propositions-design.html) permet de comparer des propositions de direction artistique pour le site, les réseaux et la lettre. Elle est un document de travail non officiel, distinct du site actuel.
+Le [kit de communication du mandat](kit-communication/README.md) décline la charte actuelle sur les réseaux, la lettre, la presse et les invitations. Le [dossier PDF](output/pdf/kit-communication-regis-blanchet.pdf) et les modèles sont des propositions de travail à valider avec l’équipe. Le design du site actuel n’a pas été modifié.

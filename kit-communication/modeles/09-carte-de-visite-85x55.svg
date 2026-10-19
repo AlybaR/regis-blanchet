@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1004" height="650" viewBox="0 0 1004 650" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1004" height="650" fill="#F8F8F6"/>
+<rect x="0" y="0" width="1004" height="16" fill="#132D59"/>
+<rect x="72" y="75" width="84" height="84" fill="#132D59"/>
+<text x="89" y="128" class="serif" font-size="45" fill="white">RB</text>
+<rect x="89" y="142" width="50" height="4" fill="#BD8B57"/>
+<text x="183" y="126" class="serif" font-size="60" fill="#132D59">Régis Blanchet</text>
+<text x="185" y="165" class="sans" font-size="21" font-weight="700" letter-spacing="3" fill="#8A5A2E">SÉNATEUR DE L’INDRE</text>
+<line x1="74" y1="231" x2="929" y2="231" stroke="#D5CFC6" stroke-width="2"/>
+<text x="74" y="327" class="sans" font-size="30" fill="#132D59">[Adresse électronique validée]</text>
+<text x="74" y="386" class="sans" font-size="30" fill="#132D59">[Téléphone validé]</text>
+<text x="74" y="445" class="sans" font-size="30" fill="#132D59">[Site ou adresse de permanence validé]</text>
+<text x="74" y="593" class="sans" font-size="18" fill="#5A5E65">MAQUETTE · À IMPRIMER SEULEMENT APRÈS VALIDATION DES COORDONNÉES</text>
+</svg>

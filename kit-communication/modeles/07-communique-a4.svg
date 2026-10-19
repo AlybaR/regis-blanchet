@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1754" viewBox="0 0 1240 1754" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1240" height="1754" fill="white"/>
+<rect width="1240" height="178" fill="#132D59"/>
+<text x="80" y="83" class="sans" font-size="45" font-weight="700" letter-spacing="4" fill="white">RÉGIS BLANCHET</text>
+<text x="80" y="131" class="sans" font-size="22" font-weight="700" letter-spacing="4" fill="#D5B894">SÉNATEUR DE L’INDRE</text>
+<text x="80" y="253" class="sans" font-size="28" font-weight="700" letter-spacing="5" fill="#8A5A2E">COMMUNIQUÉ · MODÈLE</text>
+<text x="80" y="344" class="serif" font-size="67" fill="#132D59">[Titre factuel et vérifié]</text>
+<text x="80" y="416" class="sans" font-size="27" fill="#5A5E65">[Date] · [Lieu, si pertinent]</text>
+<rect x="80" y="454" width="1080" height="5" fill="#BD8B57"/>
+<text x="80" y="557" class="sans" font-size="30" fill="#132D59">[Le fait principal en deux lignes au maximum.]</text>
+<text x="80" y="620" class="sans" font-size="27" fill="#5A5E65">[Source primaire et contexte utile.]</text>
+<text x="80" y="746" class="sans" font-size="27" fill="#5A5E65">[Développement court : ce qui est établi et ce qui reste à suivre.]</text>
+<text x="80" y="809" class="sans" font-size="27" fill="#5A5E65">[Ajouter uniquement une citation relue et approuvée.]</text>
+<rect x="80" y="1273" width="1080" height="215" fill="#F1EFEA"/>
+<text x="115" y="1339" class="sans" font-size="24" font-weight="700" fill="#8A5A2E">POUR EN SAVOIR PLUS</text>
+<text x="115" y="1398" class="sans" font-size="25" fill="#132D59">[Lien vers la source officielle]</text>
+<text x="115" y="1443" class="sans" font-size="25" fill="#132D59">[Contact presse autorisé]</text>
+<text x="80" y="1681" class="sans" font-size="20" fill="#5A5E65">MODÈLE DE TRAVAIL · NE PAS DIFFUSER AVEC LES CHAMPS ENTRE CROCHETS</text>
+</svg>

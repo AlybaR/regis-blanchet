@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1080" height="1920" fill="#132D59"/>
+<rect x="0" y="0" width="1080" height="20" fill="#BD8B57"/>
+<text x="75" y="157" class="sans" font-size="32" font-weight="700" letter-spacing="4" fill="white">RÉGIS BLANCHET</text>
+<text x="75" y="205" class="sans" font-size="22" font-weight="700" letter-spacing="3" fill="#D5B894">SÉNATEUR DE L’INDRE</text>
+<text x="75" y="430" class="sans" font-size="29" font-weight="700" letter-spacing="5" fill="#D5B894">RENDEZ-VOUS · MAQUETTE</text>
+<text x="72" y="608" class="serif" font-size="111" fill="white">[Titre de la</text>
+<text x="72" y="724" class="serif" font-size="111" fill="white">rencontre]</text>
+<rect x="75" y="802" width="175" height="7" fill="#BD8B57"/>
+<text x="75" y="969" class="sans" font-size="48" font-weight="700" fill="white">[Date] · [Heure]</text>
+<text x="75" y="1056" class="sans" font-size="43" fill="white">[Lieu, commune]</text>
+<rect x="75" y="1240" width="930" height="320" fill="#1E3D70"/>
+<text x="115" y="1324" class="sans" font-size="27" font-weight="700" fill="#D5B894">INFORMATIONS PRATIQUES</text>
+<text x="115" y="1406" class="sans" font-size="31" fill="white">[Accès / inscription / public]</text>
+<text x="115" y="1476" class="sans" font-size="31" fill="white">[Contact validé]</text>
+<text x="75" y="1795" class="sans" font-size="25" fill="white">Visuel de travail : confirmer l’événement avant diffusion.</text>
+</svg>

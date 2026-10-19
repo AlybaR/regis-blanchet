@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1584" height="396" fill="#132D59"/>
+<rect x="0" y="0" width="14" height="396" fill="#BD8B57"/>
+<circle cx="1320" cy="170" r="360" fill="none" stroke="#39557D" stroke-width="2"/>
+<circle cx="1320" cy="170" r="268" fill="none" stroke="#39557D" stroke-width="2"/>
+<text x="100" y="177" class="serif" font-size="94" fill="white">Régis Blanchet</text>
+<rect x="105" y="212" width="103" height="5" fill="#BD8B57"/>
+<text x="105" y="272" class="sans" font-size="31" font-weight="700" letter-spacing="5" fill="#D5B894">SÉNATEUR DE L’INDRE</text>
+<text x="105" y="352" class="sans" font-size="20" fill="white">MAQUETTE DE BANNIÈRE · À ADAPTER AU CADRAGE DE CHAQUE RÉSEAU</text>
+</svg>

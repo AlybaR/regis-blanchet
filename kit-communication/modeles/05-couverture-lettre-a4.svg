@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1754" viewBox="0 0 1240 1754" role="img">
+<title>Maquette de communication Régis Blanchet - à personnaliser</title>
+<defs><style><![CDATA[
+.serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.sans { font-family: Inter, Arial, sans-serif; }
+]]></style></defs>
+
+<rect width="1240" height="1754" fill="white"/>
+<rect x="0" y="0" width="1240" height="250" fill="#132D59"/>
+<text x="90" y="106" class="sans" font-size="54" font-weight="700" letter-spacing="3" fill="white">RÉGIS BLANCHET</text>
+<text x="90" y="170" class="sans" font-size="28" font-weight="700" letter-spacing="5" fill="#D5B894">SÉNATEUR DE L’INDRE</text>
+<text x="90" y="473" class="sans" font-size="31" font-weight="700" letter-spacing="6" fill="#8A5A2E">LA LETTRE</text>
+<text x="83" y="682" class="serif" font-size="148" fill="#132D59">Des faits,</text>
+<text x="83" y="841" class="serif" font-size="148" fill="#132D59">des suites.</text>
+<rect x="90" y="919" width="160" height="7" fill="#BD8B57"/>
+<text x="90" y="1043" class="sans" font-size="38" fill="#5A5E65">[Mois / année] · [Numéro validé]</text>
+<rect x="90" y="1200" width="1060" height="365" fill="#F1EFEA"/>
+<text x="138" y="1285" class="sans" font-size="29" font-weight="700" fill="#8A5A2E">DANS CE NUMÉRO</text>
+<text x="138" y="1367" class="serif" font-size="57" fill="#132D59">[Le fait] · [Le terrain] · [Le dossier]</text>
+<text x="90" y="1686" class="sans" font-size="23" font-weight="700" fill="#132D59">DOCUMENT DE TRAVAIL · CONTENUS SOUMIS À VALIDATION</text>
+</svg>

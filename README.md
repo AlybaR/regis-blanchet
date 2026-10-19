@@ -13,3 +13,5 @@ Les liens Facebook, Instagram et LinkedIn ont été repris des liens publics du 
 La publication de cet aperçu ne vaut pas validation d'un site officiel du mandat.
 
 Les [propositions éditoriales](PROPOSITIONS_EDITORIALES.md) donnent à l’équipe des exemples d’articles, de lettres et une trame de vérification pour la suite du site.
+
+La page [Trois pistes visuelles](propositions-design.html) permet de comparer des propositions de direction artistique pour le site, les réseaux et la lettre. Elle est un document de travail non officiel, distinct du site actuel.

@@ -11,3 +11,5 @@ Les deux photographies de la page d'accueil proviennent du [site de campagne pr�
 Les liens Facebook, Instagram et LinkedIn ont été repris des liens publics du site de campagne le 20 octobre 2026. Ils sont présentés comme comptes de campagne, distincts du contact institutionnel à confirmer.
 
 La publication de cet aperçu ne vaut pas validation d'un site officiel du mandat.
+
+Les [propositions éditoriales](PROPOSITIONS_EDITORIALES.md) donnent à l’équipe des exemples d’articles, de lettres et une trame de vérification pour la suite du site.

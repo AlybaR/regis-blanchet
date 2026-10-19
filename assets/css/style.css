@@ -17,3 +17,34 @@
   html{scroll-behavior:auto}
   .btn,.news-card,.doc-tile,.site-nav>a,.filter,.hero-photo{transition:none}
 }
+
+/* Survols et accès aux profils publics. */
+.site-nav>a:not(.nav-contact){position:relative}
+.site-nav>a:not(.nav-contact)::after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:2px;background:var(--terracotta);transition:right .25s ease}
+.site-nav>a:not(.nav-contact):hover::after,.site-nav>a:not(.nav-contact):focus-visible::after{right:0}
+.mandate-card{border-left:3px solid transparent;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.mandate-card:hover,.mandate-card:focus-visible{border-left-color:var(--terracotta);box-shadow:0 16px 30px rgba(19,45,89,.10)}
+.mandate-arrow,.doc-arrow,.fake-read span,.text-link span{display:inline-block;transition:transform .25s ease,color .25s ease}
+.mandate-card:hover .mandate-arrow,.mandate-card:focus-visible .mandate-arrow,.doc-tile:hover .doc-arrow,.doc-tile:focus-visible .doc-arrow,.fake-read:hover span,.fake-read:focus-visible span,.text-link:hover span,.text-link:focus-visible span{color:var(--terracotta-deep);transform:translate(3px,-3px)}
+.social-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.social-links .social-card{display:flex;align-items:center;justify-content:space-between;gap:5px;min-width:0;padding:12px 10px;border:1px solid rgba(255,255,255,.32);border-radius:3px;background:rgba(255,255,255,.05);font-size:11px;transition:background .2s ease,border-color .2s ease,transform .25s ease}
+.social-links .social-card:hover,.social-links .social-card:focus-visible{background:rgba(255,255,255,.13);border-color:#dfbe91;color:#fff}
+.social-card span:last-child{color:#dfbe91;transition:transform .25s ease}
+.social-card:hover span:last-child,.social-card:focus-visible span:last-child{transform:translate(2px,-2px)}
+.contact-right .source-link,.institutional-link{text-decoration:underline;text-decoration-color:#7487a0;text-underline-offset:4px}
+.institutional-label{margin-top:24px;margin-bottom:10px}
+.institutional-link{display:inline-flex;gap:8px;font-size:12px;font-weight:600}
+.institutional-link span{transition:transform .25s ease}
+.institutional-link:hover span,.institutional-link:focus-visible span{transform:translate(3px,-3px)}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .mandate-card:hover{transform:translateX(5px)}
+  .social-links .social-card:hover{transform:translateY(-3px)}
+  .news-visual-letter,.book-mark,.building-line{transition:transform .35s ease}
+  .news-card:hover .news-visual-letter,.news-card:hover .book-mark,.news-card:hover .building-line{transform:translateY(-7px)}
+  .letter-front{transition:transform .35s ease,box-shadow .35s ease}
+  .letter-showcase:hover .letter-front{transform:rotate(-1deg) translateY(-7px);box-shadow:0 28px 50px rgba(19,45,89,.22)}
+}
+@media (max-width:380px){.social-links{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){
+  .site-nav>a:not(.nav-contact)::after,.mandate-card,.mandate-arrow,.doc-arrow,.fake-read span,.text-link span,.social-links .social-card,.social-card span:last-child,.institutional-link span{transition:none}
+}

@@ -8,4 +8,6 @@ Les informations sur le mandat sont liées à la [fiche officielle du Sénat](ht
 
 Les deux photographies de la page d'accueil proviennent du [site de campagne préexistant](https://regisblanchet2026.github.io/). Les visuels de la lettre sont des illustrations générées ; ils n'illustrent aucune visite ou réalisation effective. Aucun formulaire ni collecte de données n'est intégré.
 
+Les liens Facebook, Instagram et LinkedIn ont été repris des liens publics du site de campagne le 20 octobre 2026. Ils sont présentés comme comptes de campagne, distincts du contact institutionnel à confirmer.
+
 La publication de cet aperçu ne vaut pas validation d'un site officiel du mandat.

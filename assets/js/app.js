@@ -1,5 +1,26 @@
 (function(){
  'use strict';
+ const header=document.querySelector('.site-header');
+ if(header){
+   const updateHeader=()=>header.classList.toggle('is-scrolled',window.scrollY>12);
+   updateHeader();
+   window.addEventListener('scroll',updateHeader,{passive:true});
+ }
+ if('IntersectionObserver' in window&&window.matchMedia('(prefers-reduced-motion: no-preference)').matches){
+   const reveals=Array.from(document.querySelectorAll('.reveal'));
+   reveals.forEach((element,index)=>{
+     if(element.classList.contains('news-card'))element.style.setProperty('--reveal-delay',`${(index%3)*90}ms`);
+   });
+   document.documentElement.classList.add('js-reveal');
+   const revealObserver=new IntersectionObserver(entries=>{
+     entries.forEach(entry=>{
+       if(!entry.isIntersecting)return;
+       entry.target.classList.add('is-visible');
+       revealObserver.unobserve(entry.target);
+     });
+   },{threshold:0.12,rootMargin:'0px 0px -35px 0px'});
+   reveals.forEach(element=>revealObserver.observe(element));
+ }
  const menuButton=document.querySelector('.nav-toggle');
  const nav=document.querySelector('.site-nav');
  if(menuButton&&nav){

@@ -224,3 +224,73 @@
 .demo-badge{align-self:flex-start;font:700 9px var(--sans)!important;letter-spacing:.14em;text-transform:uppercase;color:#8a6d4a!important;background:#F1E8DA;padding:4px 8px;border-radius:2px;margin-bottom:4px}
 .meet-count{display:flex;align-items:center;gap:4px}
 .meet-count .dot{width:10px;height:10px;border-radius:50%;background:var(--tie-bordeaux);display:inline-block;margin-left:6px}
+
+/* Carte interactive : ouverture en grand, aperçu, fiche rencontre (20/10/2026) */
+.indre-card{cursor:zoom-in;transition:box-shadow .45s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.indre-card:hover,.indre-card:focus-visible{box-shadow:0 16px 36px rgba(18,45,89,.10);outline:none}
+.indre-card .meet{cursor:pointer}
+.map-open{margin-top:10px;font:700 12px var(--sans)!important;color:var(--navy)!important;border-bottom:1px solid var(--terracotta);align-self:flex-start;padding-bottom:4px}
+.indre-card:hover .map-open span{display:inline-block;transform:translate(3px,-3px);transition:transform .25s ease}
+.indre-map .meet.is-selected circle{fill:var(--navy);opacity:1;transform:scale(1.7);stroke-width:3}
+.map-modal{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;transition:opacity .25s ease}
+.map-modal.is-open{opacity:1}
+.map-modal[hidden]{display:none}
+.map-modal-backdrop{position:absolute;inset:0;background:rgba(6,19,36,.78)}
+.map-modal-panel{position:relative;width:min(1180px,100%);max-height:calc(100vh - 48px);background:var(--cream);border-radius:8px;box-shadow:0 24px 90px #0008;display:flex;flex-direction:column;overflow:hidden;transform:translateY(12px);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.map-modal.is-open .map-modal-panel{transform:none}
+.map-modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:20px 26px;background:#fff;border-bottom:1px solid var(--line)}
+.map-modal-head h2{font:600 30px/1.05 var(--serif);color:var(--navy);margin-top:6px}
+.map-modal-head p{font-size:13px;color:var(--ink-soft);margin-top:4px}
+.map-modal-close{border:0;background:#eeeae5;width:40px;height:40px;border-radius:50%;font-size:28px;line-height:1;color:var(--navy);flex:none}
+.map-modal-body{display:grid;grid-template-columns:1.25fr 1fr;min-height:0;flex:1;overflow:auto}
+.map-modal-map{padding:24px;display:flex;align-items:center;justify-content:center;background:var(--cream)}
+.map-modal-map .indre-map{max-height:calc(100vh - 200px);width:100%}
+.map-modal-map .indre-map .city text{font-size:15px}
+.map-modal-map .meet circle{r:7px}
+.map-modal-side{background:#fff;border-left:1px solid var(--line);padding:24px 26px;overflow:auto}
+.side-list b{font:600 20px var(--serif);color:var(--navy)}
+.side-list ol{list-style:none;padding:0;margin-top:12px;display:grid;gap:4px;counter-reset:r}
+.side-list button{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 4px;display:flex;justify-content:space-between;gap:12px;align-items:baseline;transition:background .25s ease}
+.side-list button:hover,.side-list button:focus-visible{background:var(--cream)}
+.side-list button span{font:600 15px var(--sans);color:var(--navy)}
+.side-list button small{font-size:12px;color:var(--tie-bordeaux);text-align:right}
+.side-preview{animation:sideIn .45s cubic-bezier(.2,.7,.2,1)}
+@keyframes sideIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.side-theme{display:inline-block;font:700 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--tie-bordeaux);padding:5px 9px;border-radius:2px}
+.side-preview h3{font:600 36px/1 var(--serif);color:var(--navy);margin:12px 0 8px}
+.side-meta{font-size:13px;color:var(--ink-soft)}
+.side-sujet{font:500 21px/1.3 var(--serif);color:var(--ink);margin:18px 0}
+.side-eng{border-left:3px solid var(--terracotta);padding:4px 0 4px 14px;font-size:13px;color:var(--ink-soft);line-height:1.6}
+.side-eng span{display:block;font-weight:700;color:var(--navy);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+.side-open{margin-top:22px}
+.side-back{display:block;margin-top:14px;background:none;border:0;padding:8px 0;font-size:13px;font-weight:600;color:var(--navy)}
+.side-note{margin-top:18px;font-size:11px;color:#8a8f98;line-height:1.5}
+@media(max-width:820px){.map-modal{padding:0}.map-modal-panel{max-height:100vh;height:100%;border-radius:0}.map-modal-body{grid-template-columns:1fr}.map-modal-map{padding:14px}.map-modal-map .indre-map{max-height:46vh}.map-modal-side{border-left:0;border-top:1px solid var(--line);padding:20px}.map-modal-head{padding:14px 18px}.map-modal-head h2{font-size:24px}.side-preview h3{font-size:30px}}
+/* Fiche rencontre */
+.rencontre-page{background:#fff;padding:56px 0 80px}
+.r-back-top{font-size:13px;font-weight:600;color:var(--navy);padding:12px 0}
+.r-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:70px;align-items:start}
+.r-back{display:inline-block;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:22px;padding:6px 0}
+.rencontre-page .demo-badge{display:inline-block;margin-bottom:16px}
+.rencontre-page h1{font:600 clamp(48px,6vw,80px)/.95 var(--serif);color:var(--navy);margin:16px 0 14px;letter-spacing:-.02em}
+.r-meta{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13px;color:var(--ink-soft)}
+.r-meta span:first-child{color:#8a6d4a;background:#F6F1EA;padding:0 6px}
+.rencontre-page section{margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.rencontre-page section h2{font:600 26px var(--serif);color:var(--navy);margin-bottom:10px}
+.rencontre-page section p{font-size:15px;line-height:1.8;color:var(--ink)}
+.r-lead{font:500 24px/1.35 var(--serif)!important;color:var(--ink)}
+.r-todo{margin-top:10px;font-size:13px!important;color:#8a6d4a!important;background:#F6F1EA;padding:10px 14px;border-radius:2px}
+.r-eng p b{color:var(--tie-bordeaux)}
+.r-src{font-size:12px!important;color:#8a8f98!important;margin-top:8px}
+.r-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px}
+.r-nav a{border:1px solid var(--line);padding:14px 16px;font:600 18px var(--serif);color:var(--navy);transition:transform .25s ease,box-shadow .25s ease}
+.r-nav a:last-child{text-align:right}
+.r-nav a:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(19,45,89,.09)}
+.r-nav small{display:block;font:700 10px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--terracotta-deep);margin-bottom:4px}
+.r-side{position:sticky;top:120px;background:var(--cream);border:1px solid var(--line);padding:22px}
+.r-map .meet{cursor:pointer}
+.r-facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.r-facts dt{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--terracotta-deep)}
+.r-facts dd{margin:2px 0 0;font:600 19px var(--serif);color:var(--navy)}
+@media(max-width:900px){.r-grid{grid-template-columns:1fr;gap:34px}.r-side{position:static}.rencontre-page{padding:36px 0 60px}}
+.r-back{margin-right:12px}@media(max-width:640px){.r-back-top{font-size:12px;text-align:right}}

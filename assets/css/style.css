@@ -187,3 +187,28 @@
 @media(prefers-reduced-motion:reduce){.territoire-img img,.news-photo,.hero-photo{transition:none}}
 .footer-legal{color:#d8c3a2;text-decoration:underline;text-underline-offset:3px;padding:6px 0;display:inline-block}
 .footer-legal:hover{color:#fff}
+
+/* Carte de l'Indre (20/10/2026) */
+.indre-card{margin:30px 0 0;display:grid;grid-template-columns:minmax(200px,290px) 1fr;gap:26px;align-items:center;background:var(--cream);padding:20px 22px;border:1px solid var(--line)}
+.indre-map{width:100%;height:auto;display:block;overflow:visible}
+.indre-map .arr{stroke:#fff;stroke-width:1.2;transition:fill .45s ease}
+.indre-map .arr:hover{fill:#D9CFBE}
+.indre-map .city text{font:600 19px var(--sans);fill:var(--navy);paint-order:stroke;stroke:var(--cream);stroke-width:4px;stroke-linejoin:round}
+.indre-map .city .halo{opacity:.12;transform-box:fill-box;transform-origin:center;transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .45s ease}
+.indre-map .city{cursor:default;outline:none}
+.indre-map .city:hover .halo,.indre-map .city:focus .halo{opacity:.22;transform:scale(1.6)}
+.indre-card figcaption{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--ink-soft)}
+.indre-card figcaption b{font:600 26px/1 var(--serif);color:var(--navy);margin-bottom:4px}
+.indre-card figcaption strong{font:600 20px var(--serif);color:var(--navy);margin-right:4px}
+.indre-card figcaption em{font-family:var(--sans);font-weight:400;font-style:normal;font-size:12px;color:var(--tie-bordeaux);margin-top:8px;line-height:1.5}
+@media(prefers-reduced-motion:reduce){.indre-map .city .halo,.indre-map .arr{transition:none}}
+@media(max-width:640px){.indre-card{grid-template-columns:1fr;gap:16px;padding:18px}.indre-map{max-width:300px;margin:0 auto}.indre-map .city text{font-size:17px}}
+
+/* Courriel en carte cliquable, comme les réseaux (20/10/2026) */
+.contact-mail-links{margin:16px 0 14px}
+.social-links .mail-card{flex:1 1 100%;justify-content:space-between;align-items:center}
+.mail-card span:first-child{display:flex;flex-direction:column;gap:3px;font:600 18px/1.2 var(--serif);letter-spacing:0;text-transform:none}
+.mail-card small{font:700 9px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#c8ab85}
+.mail-card span:last-child{font-size:18px}
+.social-links.contact-mail-links{grid-template-columns:1fr}
+.social-links .mail-card{padding:14px 16px}

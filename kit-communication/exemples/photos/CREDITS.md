@@ -16,4 +16,3 @@ Aucune image générée. Chaque photo réutilisée publiquement doit garder son 
 | chx_place.jpg | Place de la République, Châteauroux | Benjamin Smith | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ch%C3%A2teauroux_-_Place_de_la_R%C3%A9publique_in_2024.jpg |
 
 Les photos Wikimedia sont des photos d'illustration de lieux : elles ne montrent aucune visite du sénateur. Pour les vraies publications, privilégier des photos de terrain prises par l'équipe, datées et autorisées.
-| regis_senat.jpg | Régis Blanchet au Sénat (salon, buste de la République) | Fournie par l'équipe, 20/10/2026 (auteur à confirmer) | Droits à confirmer | — |

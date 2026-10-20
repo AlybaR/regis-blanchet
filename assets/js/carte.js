@@ -118,7 +118,7 @@
           '<h1>' + esc(d.nom) + '</h1>' +
           '<p class="r-meta"><span>[Date de la rencontre]</span><span>' + d.cp + ' · arrondissement de ' + esc(d.arrondissement) + '</span></p>' +
           '<section><h2>Le sujet</h2><p class="r-lead">' + esc(d.sujet) + '.</p></section>' +
-          '<section><h2>Ce qui a été évoqué</h2><p>Les élus de ' + esc(d.nom) + ' présentent leurs priorités sur ce sujet : situation actuelle, difficultés rencontrées, demandes précises adressées au sénateur.</p>' +
+          '<section><h2>Ce qui a été évoqué</h2><p>Les élus de ' + esc(d.nom) + ' ont présenté leurs demandes sur ce sujet au sénateur.</p>' +
           '<p class="r-todo">Compte rendu à rédiger après la rencontre : interlocuteurs (avec leur accord), faits et chiffres vérifiés, photo autorisée et datée.</p></section>' +
           '<section><h2>La suite donnée</h2><p>Selon le sujet : question écrite au Gouvernement, échange avec un ministère, suivi dans les travaux de la commission de l’aménagement du territoire et du développement durable.</p>' +
           '<p class="r-todo">Chaque suite est datée et reliée à sa source officielle sur senat.fr.</p></section>' +

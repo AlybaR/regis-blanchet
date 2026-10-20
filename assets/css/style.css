@@ -117,3 +117,11 @@
 @media(max-width:900px){.dossier-grid{grid-template-columns:1fr 1fr}.dossier-card{min-height:330px}.dossier-method{display:block}.dossier-method>strong{display:block;width:auto;margin-bottom:16px}.dossier-method ol{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.dossier-grid{grid-template-columns:1fr}.dossier-card{min-height:300px}.dossier-method ol{grid-template-columns:1fr 1fr;gap:15px}.dossier-method{padding:23px}.news-visual-symbol{font-size:180px}.idea-list-content ol{columns:1}.news-grid:has(.news-featured.is-hidden){display:flex;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.dossier-card{transition:none}}
+
+/* Photo duo : cadre portrait au ratio d'origine, visages entièrement visibles (correctif 20/10/2026) */
+.territoire-art{min-height:0}
+.territoire-img{height:auto;aspect-ratio:1419/1600;max-height:640px;margin-inline:auto}
+.territoire-img img{object-position:50% 18%}
+.territoire-img:after{inset:14px;border-color:rgba(255,255,255,.35)}
+@media(max-width:900px){.territoire-img{height:auto;max-height:560px}}
+@media(max-width:640px){.territoire-art{min-height:0}.territoire-img{height:auto;max-height:none}}

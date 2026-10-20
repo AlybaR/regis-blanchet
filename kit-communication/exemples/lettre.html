@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>La Lettre — Régis Blanchet, n°0</title>
+<link rel="stylesheet" href="base.css">
+<style>
+@page{size:210mm 297mm;margin:0}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;background:#fff;page-break-after:always}
+.in{position:absolute;left:14mm;right:14mm}
+.k{font:700 6.6pt 'IN';letter-spacing:.2em;text-transform:uppercase;color:var(--bronze)}
+.k.b{color:var(--bordeaux)}.k.g{color:var(--green)}
+.rule{width:14mm;height:.8mm;background:var(--bronze)}
+.h2{font:600 25pt/1.0 'CG';color:var(--navy);letter-spacing:-.005em}
+.h2 i{font-weight:500}
+.p{font:400 8.4pt/1.6 'IN';color:var(--ink)}
+.p+.p{margin-top:2.2mm}
+.small{font:400 6.4pt/1.5 'IN';color:var(--soft)}
+.cr{font:500 5.4pt/1.3 'IN';color:var(--soft);letter-spacing:.02em;margin-top:1.2mm}
+.ph{overflow:hidden;position:relative;background:#ddd}.ph img{width:100%;height:100%;object-fit:cover;display:block}
+/* folio / header */
+.top{position:absolute;left:14mm;right:14mm;top:9mm;display:flex;justify-content:space-between;align-items:center;font:700 6pt 'IN';letter-spacing:.16em;color:var(--navy);padding-bottom:2.4mm;border-bottom:.35mm solid var(--navy)}
+.top span:last-child{color:var(--bronze)}
+.bot{position:absolute;left:14mm;right:14mm;bottom:8mm;display:flex;justify-content:space-between;font:500 5.6pt 'IN';letter-spacing:.1em;color:var(--soft);border-top:.25mm solid var(--line);padding-top:2mm;text-transform:uppercase}
+.bot b{color:var(--navy);font-weight:700}
+/* ===== P1 ===== */
+.mast{position:absolute;left:0;right:0;top:0;height:46mm;background:var(--navy);color:#fff}
+.mast .t{position:absolute;left:14mm;top:10mm;font:600 50pt/.85 'CG';letter-spacing:-.01em}
+.mast .t i{font-weight:500;color:var(--bronze-l)}
+.mast .s{position:absolute;left:14.5mm;top:33mm;font:700 6.8pt 'IN';letter-spacing:.24em;color:var(--bronze-l)}
+.mast .n{position:absolute;right:14mm;top:11mm;text-align:right;font:600 6.4pt/1.7 'IN';letter-spacing:.14em;color:#C9D3E0}
+.mast .n b{display:block;font:600 34pt/.9 'CG';color:#fff;letter-spacing:0}
+.mast .bar{position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:var(--bronze)}
+.ed-photo{position:absolute;left:0;top:46mm;width:92mm;height:118mm}
+.ed-photo img{object-position:50% 20%}
+.ed-photo .tag{position:absolute;left:14mm;bottom:5mm;background:#fff;padding:1.4mm 2.4mm;font:700 5.6pt 'IN';letter-spacing:.14em;color:var(--navy)}
+.ed{position:absolute;left:100mm;right:14mm;top:54mm}
+.ed .q{font:500 22pt/1.02 'CG';font-style:italic;color:var(--navy);margin:2.4mm 0 3.4mm}
+.ed .sign{margin-top:3mm;font:600 13pt 'CG';color:var(--navy)}
+.ed .sign small{display:block;font:600 5.8pt 'IN';letter-spacing:.14em;color:var(--bronze);margin-top:.6mm}
+.ed .note{margin-top:3mm;padding:2.4mm 3mm;background:var(--ivory);font:400 6pt/1.45 'IN';color:var(--soft);border-left:.8mm solid var(--bronze)}
+.brief{position:absolute;left:0;right:0;top:168mm;height:46mm;background:var(--ivory);padding:7mm 14mm}
+.tl{display:grid;grid-template-columns:repeat(3,1fr);gap:6mm;margin-top:4mm}
+.tl div{border-top:.6mm solid var(--navy);padding-top:2.6mm}
+.tl b{display:block;font:600 21pt/1 'CG';color:var(--navy)}
+.tl span{display:block;font:600 5.8pt 'IN';letter-spacing:.14em;color:var(--bronze);margin:1.2mm 0 1mm}
+.tl p{font:400 7.4pt/1.45 'IN';color:var(--ink)}
+.som{position:absolute;left:14mm;right:14mm;top:221mm}
+.som-g{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:3mm}
+.som-g .ph{height:26mm}
+.som-g .x{display:flex;gap:2mm;align-items:baseline;margin-top:2mm}
+.som-g .x i{font:600 15pt 'CG';color:var(--bronze);font-style:normal}
+.som-g .x b{font:600 11pt/1.05 'CG';color:var(--navy)}
+.som-g .x small{display:block;font:400 6.2pt 'IN';color:var(--soft);margin-top:.6mm}
+/* ===== P2 ===== */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:7mm}
+.comp{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm;margin-top:3mm}
+.comp div{background:var(--ivory);padding:2.4mm 2.8mm;font:400 6.6pt/1.4 'IN'}
+.comp div b{display:block;font:600 10pt/1.05 'CG';color:var(--navy);margin-bottom:.6mm}
+.band{position:absolute;left:0;right:0;top:98mm;height:82mm}
+.band img{object-position:50% 45%}
+.band .cap{position:absolute;left:14mm;bottom:4mm;background:rgba(11,31,63,.9);color:#fff;padding:2mm 3mm;font:600 6pt 'IN';letter-spacing:.12em}
+.band .cap span{display:block;font:400 5.2pt 'IN';letter-spacing:.02em;color:#C9D3E0;margin-top:.6mm}
+.eng{margin-top:3mm;border-top:.4mm solid var(--navy)}
+.eng .r{display:grid;grid-template-columns:8mm 1fr 66mm;gap:3mm;padding:2.1mm 0;border-bottom:.25mm solid var(--line);align-items:start}
+.eng .r i{font:600 15pt/1 'CG';color:var(--bordeaux);font-style:normal}
+.eng .r b{display:block;font:600 7.6pt/1.35 'IN';color:var(--navy)}
+.eng .r em{font-style:normal;font:400 6.6pt/1.4 'IN';color:var(--soft)}
+.eng .r .lv{font:400 6.6pt/1.4 'IN';color:var(--ink)}
+.eng .r .lv b{display:inline;font-size:6.6pt;color:var(--green)}
+/* ===== P3 ===== */
+.p3-photo{position:absolute;right:0;top:15mm;width:110mm;height:96mm}
+.p3-left{position:absolute;left:14mm;top:22mm;width:76mm}
+.rep{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:5mm}
+.rep div{border-top:.6mm solid var(--green);padding-top:2mm}
+.rep b{display:block;font:600 22pt/1 'CG';color:var(--navy)}
+.rep span{display:block;font:400 6.4pt/1.35 'IN';color:var(--soft);margin-top:.8mm}
+.mos{position:absolute;left:14mm;right:14mm;top:118mm;display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:3mm}
+.mos .ph{height:44mm}
+.ger{position:absolute;left:14mm;right:14mm;top:178mm;display:grid;grid-template-columns:86mm 1fr;gap:6mm;background:#FAF5F3;border-top:1.2mm solid var(--bordeaux)}
+.ger .ph{height:62mm}
+.ger .tx{padding:6mm 6mm 5mm 0}
+.ger .qq{font:500 17pt/1.05 'CG';font-style:italic;color:var(--bordeaux);margin:2.4mm 0 3mm}
+.meet{position:absolute;left:14mm;right:14mm;top:246mm;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm}
+.meet div{border:.3mm dashed #C9C2B6;padding:2.4mm 3mm;font:400 6.4pt/1.45 'IN';color:var(--soft)}
+.meet div b{display:block;color:var(--navy);font:600 9pt 'CG'}
+/* ===== P4 ===== */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:5mm}
+.facts div{background:var(--navy);color:#fff;padding:3.4mm 3mm 3.6mm}
+.facts b{display:block;font:600 22pt/1 'CG'}
+.facts span{display:block;font:400 6.3pt/1.4 'IN';color:#D2DAE6;margin-top:1.2mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:7mm;margin-top:5mm}
+.list{display:grid;gap:1.8mm;margin-top:2mm}
+.list div{display:grid;grid-template-columns:3.4mm 1fr;font:400 7.4pt/1.45 'IN'}
+.list div:before{content:'';width:1.6mm;height:1.6mm;margin-top:1.2mm;background:var(--bronze)}
+.list.o div:before{background:none;border:.35mm solid var(--navy);border-radius:50%}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);margin-top:3mm;border-top:.6mm solid var(--green);position:relative}
+.cal div{padding:3mm 3mm 0 0;position:relative}
+.cal div:before{content:'';position:absolute;top:-2.1mm;left:0;width:3.6mm;height:3.6mm;border-radius:50%;background:#fff;border:.6mm solid var(--green)}
+.cal b{display:block;font:600 11pt/1.1 'CG';color:var(--navy);margin-top:1.4mm}
+.cal span{display:block;font:400 6.6pt/1.4 'IN';color:var(--soft);margin-top:.8mm}
+.p4-photo{position:absolute;right:0;bottom:16mm;width:106mm;height:116mm}
+.p4-left{position:absolute;left:14mm;bottom:20mm;width:78mm}
+.box{background:var(--ivory);padding:4mm 4.4mm;margin-bottom:3mm}
+.box h4{font:600 12pt 'CG';color:var(--navy);margin-bottom:1.4mm}
+.ph-f{color:#9a8f80;background:#F1EBE2;padding:0 .8mm}
+</style></head><body>
+
+<!-- ============ PAGE 1 — couverture et édito (photo en haut à gauche) ============ -->
+<section class="page">
+  <div class="mast">
+    <div class="t">La Lettre <i>de l’Indre</i></div>
+    <div class="s">RÉGIS BLANCHET · SÉNATEUR DE L’INDRE</div>
+    <div class="n">NUMÉRO<b>0</b>NOVEMBRE 2026</div>
+    <div class="bar"></div>
+  </div>
+  <div class="ed-photo ph"><img src="photos/camp_parc.jpg" alt=""><div class="tag">L’ÉDITO</div></div>
+  <div class="ed">
+    <div class="k">Le mot du sénateur</div>
+    <div class="q">« Je n’ai jamais servi qu’une cause&nbsp;: l’Indre. »</div>
+    <p class="p">Je suis né à Buzançais. J’y ai grandi, j’y ai construit toute ma vie d’élu. De ce territoire, j’en connais les visages, les forces et les fragilités.</p>
+    <p class="p">Beaucoup de nos projets dépendent de décisions prises à Paris&nbsp;: financements, infrastructures, organisation des services publics, cadre réglementaire. Ma mission sera d’être ce relais, un sénateur qui construit la loi avec vous, qui vous consulte, vous écoute et vous rend compte.</p>
+    <div class="sign">Régis Blanchet<small>SÉNATEUR DE L’INDRE</small></div>
+    <div class="note">Textes extraits de sa profession de foi (septembre 2026). L’édito du premier numéro sera écrit avec le sénateur.</div>
+  </div>
+  <div class="brief">
+    <div class="k">Le mois en bref</div>
+    <div class="tl">
+      <div><b>27 septembre</b><span>ÉLECTION</span><p>Régis Blanchet est élu sénateur de l’Indre.</p></div>
+      <div><b>5 octobre</b><span>GROUPE</span><p>Il rejoint le groupe Union Centriste et Indépendants.</p></div>
+      <div><b>6 octobre</b><span>COMMISSION</span><p>Il devient membre de la commission de l’aménagement du territoire et du développement durable.</p></div>
+    </div>
+  </div>
+  <div class="som">
+    <div class="k">Au sommaire</div>
+    <div class="som-g">
+      <div><div class="ph"><img src="photos/hemi_est.jpg" alt=""></div><div class="x"><i>2</i><div><b>Au Sénat</b><small>Une commission pour les territoires</small></div></div></div>
+      <div><div class="ph"><img src="photos/buz_indre2.jpg" alt=""></div><div class="x"><i>3</i><div><b>Dans l’Indre</b><small>Repères, communes et Géraldine Rouah</small></div></div></div>
+      <div><div class="ph"><img src="photos/chx_gare.jpg" alt=""></div><div class="x"><i>4</i><div><b>Le dossier</b><small>Ligne POLT : 28 trains annoncés</small></div></div></div>
+    </div>
+  </div>
+  <div class="bot"><span>Numéro 0 · spécimen de travail · non diffusé</span><b>1 / 4</b></div>
+</section>
+
+<!-- ============ PAGE 2 — Au Sénat (photo au milieu) ============ -->
+<section class="page">
+  <div class="top"><span>LA LETTRE DE L’INDRE · N°0</span><span>AU SÉNAT</span></div>
+  <div class="in" style="top:20mm">
+    <div class="k">Au Sénat</div>
+    <div class="h2" style="margin-top:2mm">Une commission <i>pour les territoires</i></div>
+    <div class="cols" style="margin-top:4mm">
+      <div>
+        <p class="p">Depuis le 6 octobre 2026, Régis Blanchet siège à la commission de l’aménagement du territoire et du développement durable. C’est là que les textes sont examinés et amendés avant d’arriver en séance publique, que ministres et experts sont auditionnés et que l’action du Gouvernement est contrôlée.</p>
+        <p class="p">Pour un département rural comme l’Indre, son champ est très concret&nbsp;: routes, trains, réseaux, eau, services publics.</p>
+      </div>
+      <div>
+        <div class="small" style="font-weight:600;color:var(--navy)">Ses domaines, selon le Sénat</div>
+        <div class="comp">
+          <div><b>Aménagement</b>Numérique, accès aux services publics…</div>
+          <div><b>Transports</b>Ferroviaire, routier, aérien, maritime</div>
+          <div><b>Environnement</b>Eau, biodiversité, risques naturels</div>
+          <div><b>Transition</b>Énergies renouvelables, déchets, climat</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="band ph"><img src="photos/hemi_est.jpg" alt=""><div class="cap">L’HÉMICYCLE DU SÉNAT, PALAIS DU LUXEMBOURG<span>Photo : Tangopaso, domaine public · Wikimedia Commons</span></div></div>
+  <div class="in" style="top:188mm">
+    <div class="k b">Ses 7 engagements · où ils se jouent au Sénat</div>
+    <div class="eng">
+      <div class="r"><i>1</i><div><b>Agir contre les déserts médicaux</b></div><div class="lv">Amendements, propositions de loi, <b>questions écrites</b></div></div>
+      <div class="r"><i>2</i><div><b>Supprimer les normes inutiles</b></div><div class="lv">Travaux de simplification, amendements</div></div>
+      <div class="r"><i>3</i><div><b>Une réelle politique d’aménagement du territoire</b></div><div class="lv"><b>Sa commission</b>, au cœur de ce sujet</div></div>
+      <div class="r"><i>4</i><div><b>Une véritable décentralisation</b></div><div class="lv">Le Sénat représente les collectivités (Constitution, art. 24)</div></div>
+      <div class="r"><i>5</i><div><b>Redonner la liberté de décision aux communes</b></div><div class="lv">Textes relatifs aux collectivités, amendements</div></div>
+      <div class="r"><i>6</i><div><b>Autonomie financière des communes</b></div><div class="lv"><b>Loi de finances</b>, examinée chaque automne</div></div>
+      <div class="r"><i>7</i><div><b>Un sénateur présent et accessible</b></div><div class="lv">Cette lettre, le site, la permanence</div></div>
+    </div>
+    <div class="cr">Engagements : profession de foi, septembre 2026. Leviers : présentation institutionnelle, sans préjuger des positions qui seront prises.</div>
+  </div>
+  <div class="bot"><span>Sources : senat.fr · Constitution, article 24</span><b>2 / 4</b></div>
+</section>
+
+<!-- ============ PAGE 3 — Dans l'Indre (photo en haut à droite) ============ -->
+<section class="page">
+  <div class="top"><span>LA LETTRE DE L’INDRE · N°0</span><span>DANS L’INDRE</span></div>
+  <div class="p3-photo ph"><img src="photos/buz_indre2.jpg" alt=""></div>
+  <div class="p3-left">
+    <div class="k b">Dans l’Indre</div>
+    <div class="h2" style="margin-top:2mm">Au plus près <i>des 241 communes</i></div>
+    <p class="p" style="margin-top:3mm">Chaque mois, cette page racontera les rencontres du sénateur dans le département&nbsp;: la commune, la date, les personnes rencontrées et la suite donnée.</p>
+    <div class="rep">
+      <div><b>216 069</b><span>habitants en 2023 (Insee)</span></div>
+      <div><b>241</b><span>communes</span></div>
+      <div><b>4</b><span>arrondissements : Châteauroux, Issoudun, La Châtre, Le Blanc</span></div>
+      <div><b>2</b><span>sénateurs pour le département</span></div>
+    </div>
+    <div class="cr" style="margin-top:3mm">En haut : l’Indre à Buzançais, ville natale de Régis Blanchet. Photo : AirScott, CC BY-SA 4.0.</div>
+  </div>
+  <div class="mos">
+    <div><div class="ph"><img src="photos/brenne_merrouge.jpg" alt=""></div><div class="cr">La Brenne · étang de la Mer Rouge, Rosnay (Bert76, CC BY-SA 3.0)</div></div>
+    <div><div class="ph"><img src="photos/leblanc1.jpg" alt=""></div><div class="cr">Le Blanc et son viaduc (Daniel Jolivet, CC BY 2.0)</div></div>
+    <div><div class="ph"><img src="photos/chx_place.jpg" alt=""></div><div class="cr">Châteauroux · place de la République (B. Smith, CC BY-SA 4.0)</div></div>
+  </div>
+  <div class="ger">
+    <div class="ph"><img src="photos/camp_duo_lac.jpg" alt="" style="object-position:55% 50%"></div>
+    <div class="tx">
+      <div class="k b">Avec Géraldine Rouah</div>
+      <div class="qq">« C’est dans cette proximité que naissent les réponses les plus justes. »</div>
+      <p class="p" style="font-size:7.4pt">Suppléante de Régis Blanchet, adjointe au maire de Châteauroux. Une rubrique régulière, à son nom, pour ses rencontres et ses dossiers.</p>
+      <div class="cr">Citation : journal de campagne, septembre 2026.</div>
+    </div>
+  </div>
+  <div class="meet">
+    <div><b>Rencontre 1</b>Commune · date · interlocuteurs · suite donnée</div>
+    <div><b>Rencontre 2</b>Rédigée à partir du compte rendu validé</div>
+    <div><b>Rencontre 3</b>Avec une photo de terrain datée et autorisée</div>
+  </div>
+  <div class="bot"><span>Sources : Insee, populations de référence 2023 · Wikipedia (Indre)</span><b>3 / 4</b></div>
+</section>
+
+<!-- ============ PAGE 4 — Le dossier (photo en bas à droite) ============ -->
+<section class="page">
+  <div class="top"><span>LA LETTRE DE L’INDRE · N°0</span><span>LE DOSSIER</span></div>
+  <div class="in" style="top:20mm">
+    <div class="k g">Le dossier · mobilités</div>
+    <div class="h2" style="margin-top:2mm">Paris–Orléans–Limoges–Toulouse&nbsp;: <i>ce qui est annoncé pour la ligne</i></div>
+    <p class="p" style="margin-top:3.4mm;max-width:160mm">La ligne POLT dessert Châteauroux. Les transports ferroviaires relèvent du champ de la commission dont Régis Blanchet est membre. Voici ce que l’État et la SNCF ont annoncé lors du comité de suivi du 12 septembre 2025.</p>
+    <div class="facts">
+      <div><b>28</b><span>trains neufs « Oxygène » construits par CAF</span></div>
+      <div><b>mars 2027</b><span>début annoncé des livraisons, toutes prévues fin 2027</span></div>
+      <div><b>485 M€</b><span>pour ces trains, financés par l’État</span></div>
+      <div><b>≈ 260 M€</b><span>modernisation de la ligne et des gares d’ici fin 2027</span></div>
+    </div>
+    <div class="two">
+      <div><div class="k">Ce qui est établi</div><div class="list">
+        <div>Les nouvelles rames doivent remplacer progressivement les trains Corail.</div>
+        <div>Châteauroux figure parmi les arrêts de la ligne.</div>
+        <div>Une étude est prévue pour une seconde phase après 2027.</div>
+      </div></div>
+      <div><div class="k">Ce que la lettre suivra</div><div class="list o">
+        <div>Le respect du calendrier de livraison des rames.</div>
+        <div>La desserte des gares de l’Indre.</div>
+        <div>Les suites données à l’étude de seconde phase.</div>
+      </div></div>
+    </div>
+    <div class="k" style="margin-top:7mm">Le calendrier annoncé</div>
+    <div class="cal">
+      <div><b>août 2025 → janv. 2026</b><span>Travaux au nord d’Orléans : 35 km, 133 M€</span></div>
+      <div><b>juin 2026</b><span>Fin des travaux de la gare de Limoges</span></div>
+      <div><b>mars 2027</b><span>Arrivée des premières rames Oxygène</span></div>
+      <div><b>fin 2027</b><span>28 rames livrées · modernisation achevée · objectif Limoges–Paris en 2 h 52</span></div>
+    </div>
+  </div>
+  <div class="p4-left">
+    <div style="border-left:1.2mm solid var(--green);padding:1mm 0 1mm 4mm;margin-bottom:6mm"><div style="font:600 34pt/1 'CG';color:var(--navy)">2 h 52</div><div class="small" style="font-size:7pt;margin-top:1mm">Temps de parcours Limoges–Paris visé en 2027 par l’État et la SNCF. L’effet attendu pour Châteauroux reste à documenter.</div></div>
+    <div class="box"><h4>Contacter le sénateur</h4><div class="p" style="font-size:7.2pt">Permanence : <span class="ph-f">[adresse à confirmer]</span><br>Courriel : <span class="ph-f">[@senat.fr à confirmer]</span><br>Fiche officielle : senat.fr/senateur/blanchet_regis21652w</div></div>
+    <div class="box"><h4>Recevoir la lettre</h4><div class="p" style="font-size:7.2pt">Chaque mois, en PDF, sur le site du sénateur. Inscription par courriel avec consentement et désinscription à tout moment.</div></div>
+    <div class="small">Source du dossier : Préfecture de la région Nouvelle-Aquitaine, communiqué du comité de suivi de la desserte ferroviaire POLT, 12 septembre 2025 — à actualiser avant diffusion.</div>
+  </div>
+  <div class="p4-photo ph"><img src="photos/chx_gare.jpg" alt="" style="object-position:50% 45%"></div>
+  <div style="position:absolute;right:14mm;bottom:9.5mm" class="cr">Gare de Châteauroux · Fab5669, CC BY-SA 4.0</div>
+  <div class="bot" style="right:110mm"><span>Spécimen de travail · non diffusé</span><b>4 / 4</b></div>
+</section>
+</body></html>

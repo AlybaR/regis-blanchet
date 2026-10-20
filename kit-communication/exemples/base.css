@@ -1,0 +1,15 @@
+@font-face{font-family:'CG';src:url(fonts/cormorant-garamond-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:'CG';src:url(fonts/cormorant-garamond-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:'CG';src:url(fonts/cormorant-garamond-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:'CG';src:url(fonts/cormorant-garamond-latin-500-italic.woff2);font-weight:500;font-style:italic}
+@font-face{font-family:'CG';src:url(fonts/cormorant-garamond-latin-600-italic.woff2);font-weight:600;font-style:italic}
+@font-face{font-family:'CG';src:url(fonts/cormorant-garamond-latin-700-italic.woff2);font-weight:700;font-style:italic}
+@font-face{font-family:'IN';src:url(fonts/inter-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:'IN';src:url(fonts/inter-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:'IN';src:url(fonts/inter-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:'IN';src:url(fonts/inter-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:'IN';src:url(fonts/inter-latin-800-normal.woff2);font-weight:800}
+:root{--navy:#132D59;--deep:#0B1F3F;--ivory:#F8F8F6;--ivory2:#EFECE6;--bronze:#BD8B57;--bronze-l:#D9BC93;--bordeaux:#983F49;--green:#2E6B57;--ink:#1F2733;--soft:#5B6370;--line:#DCD8D0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IN',sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact;text-rendering:geometricPrecision}
+.serif{font-family:'CG',serif}

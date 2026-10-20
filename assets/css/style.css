@@ -212,3 +212,15 @@
 .mail-card span:last-child{font-size:18px}
 .social-links.contact-mail-links{grid-template-columns:1fr}
 .social-links .mail-card{padding:14px 16px}
+
+/* Exemple fictif de rencontres sur la carte (20/10/2026) */
+.indre-map .meet circle{fill:var(--tie-bordeaux);stroke:#fff;stroke-width:2;opacity:.85;transform-box:fill-box;transform-origin:center;transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .45s ease}
+.indre-map .meet:hover circle,.indre-map .meet:focus circle{opacity:1;transform:scale(1.5)}
+.indre-map .meet{outline:none;cursor:default}
+@media(prefers-reduced-motion:no-preference){
+  .js-reveal .indre-card .meet circle{opacity:0;transform:scale(.2)}
+  .js-reveal .is-visible .indre-card .meet circle,.js-reveal .indre-card.is-visible .meet circle{opacity:.85;transform:none;transition-delay:var(--d)}
+}
+.demo-badge{align-self:flex-start;font:700 9px var(--sans)!important;letter-spacing:.14em;text-transform:uppercase;color:#8a6d4a!important;background:#F1E8DA;padding:4px 8px;border-radius:2px;margin-bottom:4px}
+.meet-count{display:flex;align-items:center;gap:4px}
+.meet-count .dot{width:10px;height:10px;border-radius:50%;background:var(--tie-bordeaux);display:inline-block;margin-left:6px}

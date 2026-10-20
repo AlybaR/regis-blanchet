@@ -14,4 +14,6 @@ La publication de cet aperçu ne vaut pas validation d'un site officiel du manda
 
 Les [propositions éditoriales](PROPOSITIONS_EDITORIALES.md) donnent à l’équipe des exemples d’articles, de lettres et une trame de vérification pour la suite du site.
 
+La [charte en situation](output/pdf/03_charte_en_situation_regis_blanchet.pdf) (6 pages, source : `kit-communication/exemples/planche-exemples.html`) montre la charte appliquée à de vrais contenus publics vérifiés.
+
 Le [kit de communication du mandat](kit-communication/README.md) décline la charte actuelle sur les réseaux, la lettre, la presse et les invitations. Le [dossier PDF](output/pdf/kit-communication-regis-blanchet.pdf) et les modèles sont des propositions de travail à valider avec l’équipe. Le design du site actuel n’a pas été modifié.

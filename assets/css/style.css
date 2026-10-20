@@ -171,3 +171,19 @@
 .footer-logos img{height:28px;width:auto}
 .footer-logos img+img{height:24px}
 @media(max-width:640px){.hero-logos span{font-size:11px}}
+
+/* Contact courriel + animations harmonisées des photos (20/10/2026) */
+.contact-mail{margin:16px 0 12px;display:flex;flex-direction:column;gap:4px}
+.contact-mail span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#c8ab85;font-weight:700}
+.contact-mail a{font:600 22px/1.2 var(--serif);color:#fff;border-bottom:1px solid rgba(223,190,145,.5);align-self:flex-start;padding-bottom:3px;transition:color .3s,border-color .3s}
+.contact-mail a:hover,.contact-mail a:focus-visible{color:#dfbe91;border-color:#dfbe91}
+.contact-mail+.contact-missing{margin-top:6px}
+.territoire-img img,.news-photo,.hero-photo{transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .45s ease}
+.territoire-img img{filter:saturate(.85)}
+.territoire-img:hover img,.news-card:hover .news-photo,.hero-photo-wrap:hover .hero-photo{filter:saturate(1)}
+@media(prefers-reduced-motion:no-preference){
+  .territoire-img:hover img,.news-card:hover .news-photo,.hero-photo-wrap:hover .hero-photo{transform:scale(1.035)}
+}
+@media(prefers-reduced-motion:reduce){.territoire-img img,.news-photo,.hero-photo{transition:none}}
+.footer-legal{color:#d8c3a2;text-decoration:underline;text-underline-offset:3px;padding:6px 0;display:inline-block}
+.footer-legal:hover{color:#fff}

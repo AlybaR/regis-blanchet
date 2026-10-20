@@ -122,7 +122,7 @@
           '<p class="r-todo">Compte rendu à rédiger après la rencontre : interlocuteurs (avec leur accord), faits et chiffres vérifiés, photo autorisée et datée.</p></section>' +
           '<section><h2>La suite donnée</h2><p>Selon le sujet : question écrite au Gouvernement, échange avec un ministère, suivi dans les travaux de la commission de l’aménagement du territoire et du développement durable.</p>' +
           '<p class="r-todo">Chaque suite est datée et reliée à sa source officielle sur senat.fr.</p></section>' +
-          '<section class="r-eng"><h2>Lien avec ses engagements</h2><p><b>Engagement n°' + d.engagement + '</b> — ' + esc(d.engagementTexte) + '.</p><p class="r-src">Source : profession de foi de Régis Blanchet, septembre 2026.</p></section>' +
+          '<section class="r-eng"><h2>Lien avec ses engagements</h2><p><b>Engagement n°' + d.engagement + '</b> : ' + esc(d.engagementTexte) + '.</p><p class="r-src">Source : profession de foi de Régis Blanchet, septembre 2026.</p></section>' +
           '<nav class="r-nav" aria-label="Autres rencontres"><a href="rencontre.html?id=' + prev.id + '"><small>← Précédente</small>' + esc(prev.nom) + '</a><a href="rencontre.html?id=' + next.id + '"><small>Suivante →</small>' + esc(next.nom) + '</a></nav>' +
         '</div>' +
         '<aside class="r-side">' +

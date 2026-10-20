@@ -69,19 +69,10 @@
     gauche.appendChild(el('h3', null, 'Son activité, relevée par le Sénat'));
     gauche.appendChild(majLine());
     head.appendChild(gauche);
-    var chiffres = el('div', 'tv-chiffres');
-    [[(T.activites || []).length, 'participations relevées'], [(T.questions || []).length, (T.questions || []).length > 1 ? 'questions au Gouvernement' : 'question au Gouvernement']].forEach(function (c) {
-      var s = el('div', 'tv-chiffre');
-      s.appendChild(el('b', null, String(c[0])));
-      s.appendChild(el('span', null, c[1]));
-      chiffres.appendChild(s);
-    });
-    head.appendChild(chiffres);
     box.appendChild(head);
     var ol = el('ol', 'tv-list');
     tous.slice(0, 4).forEach(function (x) { ol.appendChild(ligne(x)); });
     box.appendChild(ol);
-    if (!(T.questions || []).length) box.appendChild(el('p', 'tv-vide', 'Ses questions écrites au Gouvernement s’afficheront ici automatiquement dès leur publication au Journal officiel.'));
     var pied = el('div', 'tv-foot');
     var tout = el('a', 'btn btn-primary', 'Toute son activité au Sénat →');
     tout.href = 'au-senat.html';
@@ -112,14 +103,12 @@
         }
         ol.appendChild(ligne(x));
       });
-      if (!sel.length) liste.appendChild(el('p', 'tv-vide', f === 'questions'
-        ? 'Aucune question publiée pour l’instant. Elles s’afficheront ici automatiquement dès leur publication au Journal officiel.'
-        : 'Aucun élément pour l’instant.'));
       filtres.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.f === f)); });
     };
     familles.forEach(function (f) {
-      var n = f[0] === 'tout' ? tous2.length : tous2.filter(function (x) { return x.famille === f[0]; }).length;
-      var b = el('button', null, f[1] + ' · ' + n);
+      // Pas de compteurs affichés ; un filtre sans contenu n'est pas proposé.
+      if (f[0] !== 'tout' && !tous2.some(function (x) { return x.famille === f[0]; })) return;
+      var b = el('button', null, f[1]);
       b.type = 'button';
       b.dataset.f = f[0];
       b.addEventListener('click', function () { rendre(f[0]); });

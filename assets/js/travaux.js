@@ -53,7 +53,7 @@
     return ul;
   }
   function majLine() {
-    return el('p', 'tv-maj', 'Mise à jour automatique · données publiques du Sénat · dernière mise à jour le ' + T.mis_a_jour_le_fr);
+    return el('p', 'tv-maj', 'Source : données publiques du Sénat, mises à jour automatiquement · dernière mise à jour le ' + T.mis_a_jour_le_fr);
   }
 
   /* ---------- Accueil : aperçu ---------- */
@@ -62,11 +62,8 @@
     var tous = items();
     var head = el('div', 'tv-head');
     var gauche = el('div');
-    var over = el('div', 'tv-live');
-    over.appendChild(el('span', 'live-dot'));
-    over.appendChild(document.createTextNode(' EN DIRECT DU SÉNAT'));
-    gauche.appendChild(over);
-    gauche.appendChild(el('h3', null, 'Son activité, relevée par le Sénat'));
+    gauche.appendChild(el('div', 'tv-live', 'ACTIVITÉ RÉCENTE'));
+    gauche.appendChild(el('h3', null, 'Séances et commissions'));
     gauche.appendChild(majLine());
     head.appendChild(gauche);
     box.appendChild(head);
@@ -74,10 +71,10 @@
     tous.slice(0, 4).forEach(function (x) { ol.appendChild(ligne(x)); });
     box.appendChild(ol);
     var pied = el('div', 'tv-foot');
-    var tout = el('a', 'btn btn-primary', 'Toute son activité au Sénat →');
+    var tout = el('a', 'btn btn-primary', 'Toute l’activité au Sénat');
     tout.href = 'au-senat.html';
     pied.appendChild(tout);
-    pied.appendChild(lien(T.profil.fiche, 'text-link', 'Sa fiche officielle ↗'));
+    pied.appendChild(lien(T.profil.fiche, 'text-link', 'Fiche officielle ↗'));
     box.appendChild(pied);
     box.hidden = false;
   }

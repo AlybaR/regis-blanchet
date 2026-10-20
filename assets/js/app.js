@@ -7,19 +7,6 @@
    window.addEventListener('scroll',updateHeader,{passive:true});
  }
  const motionAllowed=window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
- if('IntersectionObserver' in window&&motionAllowed){
-   const reveals=Array.from(document.querySelectorAll('.reveal'));
-   ['.features-grid .feature','.news-grid .news-card','.mandate-cards .mandate-card','.doc-grid .doc-tile'].forEach(selector=>{
-     document.querySelectorAll(selector).forEach((element,index)=>element.style.setProperty('--reveal-delay',`${index*110}ms`));
-   });
-   document.documentElement.classList.add('js-reveal');
-   const revealObserver=new IntersectionObserver(entries=>{
-     entries.forEach(entry=>{
-       entry.target.classList.toggle('is-visible',entry.isIntersecting);
-     });
-   },{threshold:0,rootMargin:'0px 0px -70px 0px'});
-   reveals.forEach(element=>revealObserver.observe(element));
- }
  const menuButton=document.querySelector('.nav-toggle');
  const nav=document.querySelector('.site-nav');
  if(menuButton&&nav){

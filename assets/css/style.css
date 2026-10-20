@@ -345,3 +345,14 @@
   .tv-filtres button{padding:11px 14px}
 }
 .tv-page .r-side{background:none;border:0;padding:0}
+
+/* ---------- Sobriété (21/10) : animations décoratives retirées ---------- */
+.reveal,.js-reveal .reveal{opacity:1!important;transform:none!important;transition:none!important}
+.hero-copy,.hero-visual{animation:none!important}
+.btn:hover,.news-card:hover,.doc-featured:hover,.dossier-card:hover,.r-nav a:hover,.social-links .social-card:hover,.mandate-card:hover{transform:none!important}
+.news-card:hover .news-visual-letter,.news-card:hover .book-mark,.news-card:hover .building-line{transform:none!important}
+.letter-showcase:hover .letter-front{transform:rotate(-4deg)!important}
+.letter-preview-trigger:hover .letter-front,.letter-preview-trigger:focus-visible .letter-front{transform:rotate(-4deg) translateY(-4px)!important}
+.letter-preview-trigger:hover .letter-behind,.letter-preview-trigger:focus-visible .letter-behind{transform:translate(22px,-13px) rotate(6deg)!important}
+.reader-arrow:hover:not(:disabled){transform:none!important}
+.tv-live{color:var(--terracotta-deep)}

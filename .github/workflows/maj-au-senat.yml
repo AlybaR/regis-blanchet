@@ -1,0 +1,44 @@
+# Mise à jour automatique de la rubrique « Au Sénat » (données publiques du Sénat).
+# - Chaque nuit à 4 h 17 (heure de Paris en hiver) + bouton « Run workflow » dans l'onglet Actions.
+# - Ne commite que si les données ont changé ; en cas de doute, échoue sans rien modifier
+#   (GitHub envoie alors un courriel d'échec, le site garde sa version précédente).
+# - Pour couper l'automatisation : onglet Actions > « Mise à jour Au Sénat » > ··· > Disable workflow.
+name: Mise à jour Au Sénat
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maj-au-senat
+  cancel-in-progress: false
+
+jobs:
+  maj:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tests des garde-fous
+        run: python3 tools/senat/test_maj_travaux.py
+      - name: Lecture des données du Sénat
+        id: maj
+        run: python3 tools/senat/maj_travaux.py
+      - name: Publication si changement
+        run: |
+          if git diff --quiet -- assets/js/travaux-data.js; then
+            echo "Aucun changement : rien à publier."
+            exit 0
+          fi
+          git config user.name "maj-au-senat[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/js/travaux-data.js
+          git commit -m "${{ steps.maj.outputs.resume }} (données publiques du Sénat)"
+          git push

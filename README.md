@@ -6,9 +6,11 @@ Ce dépôt public contient uniquement les fichiers nécessaires à une démonstr
 
 Les informations sur le mandat sont liées à la [fiche officielle du Sénat](https://www.senat.fr/senateur/blanchet_regis21652w.html) et aux [résultats des sénatoriales 2026 dans l'Indre](https://senatoriales2026.senat.fr/departement/36-indre). Le numéro zéro de la lettre est une proposition éditoriale à valider. Son mot d'ouverture est imaginé, non signé par Régis Blanchet.
 
-Les deux photographies de la page d'accueil proviennent du [site de campagne préexistant](https://regisblanchet2026.github.io/). Les visuels de la lettre sont des illustrations générées ; ils n'illustrent aucune visite ou réalisation effective. Aucun formulaire ni collecte de données n'est intégré.
+Les deux photographies de la page d'accueil proviennent du [site de campagne préexistant](https://regisblanchet2026.github.io/). Les visuels de la lettre sont des photographies réelles sous licence libre (crédits dans `kit-communication/exemples/photos/CREDITS.md`) ; aucune image n'est générée. Aucun formulaire ni collecte de données n'est intégré.
 
 Les liens Facebook, Instagram et LinkedIn ont été repris des liens publics du site de campagne le 20 octobre 2026. Ils sont présentés comme comptes de campagne, distincts du contact institutionnel à confirmer.
+
+La rubrique « Au Sénat » (accueil et `au-senat.html`) se met à jour seule chaque nuit à partir des données publiques du Sénat : voir [tools/senat/README.md](tools/senat/README.md).
 
 La publication de cet aperçu ne vaut pas validation d'un site officiel du mandat.
 

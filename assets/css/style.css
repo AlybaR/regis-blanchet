@@ -294,3 +294,54 @@
 .r-facts dd{margin:2px 0 0;font:600 19px var(--serif);color:var(--navy)}
 @media(max-width:900px){.r-grid{grid-template-columns:1fr;gap:34px}.r-side{position:static}.rencontre-page{padding:36px 0 60px}}
 .r-back{margin-right:12px}@media(max-width:640px){.r-back-top{font-size:12px;text-align:right}}
+
+/* ---------- Au Sénat : activité automatique (données publiques du Sénat) ---------- */
+.travaux-live{margin-top:56px;background:#fff;border-top:3px solid var(--navy);padding:34px 36px 30px;box-shadow:0 10px 30px rgba(19,45,89,.05)}
+.tv-head{display:flex;justify-content:space-between;gap:30px;align-items:flex-end;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.tv-live{display:flex;align-items:center;gap:8px;font:700 11px/1 var(--sans);letter-spacing:.16em;color:var(--tie-bordeaux)}
+.tv-head h3{font:600 clamp(28px,3.4vw,38px)/1.05 var(--serif);color:var(--navy);margin:10px 0 8px}
+.tv-maj{font-size:12.5px;color:var(--ink-soft);margin:0}
+.tv-chiffres{display:flex;gap:28px}
+.tv-chiffre b{display:block;font:600 44px/1 var(--serif);color:var(--navy)}
+.tv-chiffre span{font-size:12px;color:var(--ink-soft);letter-spacing:.02em}
+.tv-list{list-style:none;margin:0;padding:0}
+.tv-item{display:grid;grid-template-columns:62px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.tv-date{text-align:center;border-right:2px solid var(--terracotta);padding-right:14px}
+.tv-date b{display:block;font:600 32px/1 var(--serif);color:var(--navy)}
+.tv-date span{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-soft)}
+.tv-type{display:inline-block;font:700 10.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:5px 8px;border-radius:2px;background:var(--cream-alt);color:var(--navy)}
+.tv-seance .tv-type{background:#E9EEF6}
+.tv-commission .tv-type{background:#F4ECE2;color:var(--terracotta-deep)}
+.tv-questions .tv-type{background:#E6F0EB;color:#2E6B57}
+.tv-titre{font-size:16px;line-height:1.5;color:var(--ink);margin:9px 0 4px;font-weight:500}
+.tv-meta{font-size:13px;color:var(--ink-soft);margin:0 0 4px}
+.tv-src{font-size:12.5px;color:var(--navy);border-bottom:1px solid transparent;transition:border-color .25s ease}
+.tv-src:hover{border-bottom-color:var(--terracotta)}
+.tv-vide{margin:18px 0 0;padding:14px 16px;background:var(--cream);border-left:3px solid #2E6B57;font-size:13.5px;color:var(--ink-soft);line-height:1.6}
+.tv-foot{display:flex;align-items:center;gap:26px;flex-wrap:wrap;margin-top:24px}
+.tv-page .r-lead{max-width:640px}
+.tv-filtres{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px}
+.tv-filtres button{font:600 13px/1 var(--sans);padding:10px 14px;border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:20px;cursor:pointer;transition:background .25s ease,color .25s ease,border-color .25s ease}
+.tv-filtres button:hover{border-color:var(--navy)}
+.tv-filtres button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tv-mois{font:600 26px/1 var(--serif);color:var(--navy);margin:34px 0 4px;text-transform:capitalize}
+.tv-side-box{background:#fff;padding:22px 22px 18px;margin-bottom:18px;border-top:2px solid var(--terracotta)}
+.tv-side-box h2{font:600 22px/1.15 var(--serif);color:var(--navy);margin:0 0 10px}
+.tv-side-box p,.tv-side-box li{font-size:13.5px;line-height:1.6;color:var(--ink)}
+.tv-profil,.tv-regles,.tv-sources{margin:0;padding-left:18px}
+.tv-profil li::first-letter{text-transform:uppercase}
+.tv-sources a{color:var(--navy)}
+.tv-side-box .tv-maj{margin-top:12px}
+@media(max-width:640px){
+  .travaux-live{margin-top:40px;padding:24px 18px 22px}
+  .tv-head{gap:18px}
+  .tv-chiffre b{font-size:36px}
+  .tv-item{grid-template-columns:48px 1fr;gap:14px}
+  .tv-date{padding-right:10px}
+  .tv-date b{font-size:26px}
+  .tv-titre{font-size:15px}
+  .tv-foot{gap:16px}
+  .tv-foot .btn{width:100%;justify-content:center}
+  .tv-filtres button{padding:11px 14px}
+}
+.tv-page .r-side{background:none;border:0;padding:0}

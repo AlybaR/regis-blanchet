@@ -131,3 +131,31 @@
 .news-card:hover .news-photo{transform:scale(1.04)}
 .news-visual .placeholder-note{z-index:2;background:rgba(11,31,63,.82);color:#fff!important;padding:6px 9px;top:16px;left:16px}
 .img-credit{position:absolute;right:8px;bottom:6px;z-index:2;font-size:8px;color:#fff;background:rgba(0,0,0,.45);padding:2px 6px;letter-spacing:.02em}
+
+/* Mobile : lisibilité, cibles tactiles, hero et lettre (20/10/2026) */
+@media(max-width:640px){
+  .hero-visual{padding-left:0;min-height:0;padding-bottom:0}
+  .hero-photo-wrap{height:auto;aspect-ratio:4/5}
+  .hero-vertical-caption{display:none}
+  .hero-pullquote{position:relative;left:auto;bottom:auto;width:auto;margin:-28px 16px 0;padding:18px 20px 16px}
+  .hero-pullquote p{font-size:20px}
+  .hero-pullquote small{font-size:10px}
+  .brand-wordmark small{font-size:9px}
+  .section-overline,.news-tag,.doc-type,.territoire-note>span,.reader-overline,.contact-box-label{font-size:11px}
+  .placeholder-note{font-size:10px}
+  .img-credit{font-size:9px}
+  .dossier-status,.letter-index-tag{font-size:10px}
+  .hero-subnote,.section-disclaimer,.territoire-caption,.contact-right small,.footer-notes{font-size:12px;line-height:1.6}
+  .feature p,.news-content p,.mandate-card p,.doc-tile p{font-size:14px}
+  .prototype-doc{padding:12px 0}
+  .source-link,.institutional-link,.back-to-top,.hero-subnote a{display:inline-block;padding:10px 0}
+  .fake-read,.text-link{padding-top:14px;padding-bottom:14px}
+  .letter-corner-label{top:auto;bottom:24px;right:8px}
+  .letter-preview-trigger{height:470px}
+  .dossier-top span{font-size:11px}
+  .dossier-proof span,.dossier-proof b{font-size:12px}
+  .brand-wordmark small{font-size:10px}
+  .territoire-caption{position:static;display:block;margin-top:12px}
+  .territoire-art{min-height:0}
+  .site-nav>a{font-size:16px;padding:17px 0}
+}

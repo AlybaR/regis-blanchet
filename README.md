@@ -19,3 +19,9 @@ Les [propositions éditoriales](PROPOSITIONS_EDITORIALES.md) donnent à l’équ
 La [charte en situation](output/pdf/03_charte_en_situation_regis_blanchet.pdf) (6 pages, source : `kit-communication/exemples/planche-exemples.html`) montre la charte appliquée à de vrais contenus publics vérifiés.
 
 Le [kit de communication du mandat](kit-communication/README.md) décline la charte actuelle sur les réseaux, la lettre, la presse et les invitations. Le [dossier PDF](output/pdf/kit-communication-regis-blanchet.pdf) et les modèles sont des propositions de travail à valider avec l’équipe. Le design du site actuel n’a pas été modifié.
+
+## Carte des rencontres (mise à jour du 21 octobre 2026)
+
+Les points de la carte de l'Indre sont placés sur la **mairie** de chaque commune (coordonnées officielles geo.api.gouv.fr), et non plus sur le centre géométrique du territoire communal, qui pouvait tomber à 3 ou 4 km du bourg. Pour ajouter une rencontre : compléter `assets/js/rencontres-data.js` (code Insee), dupliquer un point dans `index.html`, puis lancer `python tools/carte/maj_carte.py` et `python tools/carte/test_carte.py`.
+
+La lettre s'intitule « La lettre de Régis Blanchet ». Elle ne porte plus le logo du groupe Union Centriste (source : `kit-communication/exemples/lettre.html`).

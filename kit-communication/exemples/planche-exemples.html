@@ -2,18 +2,18 @@
 <html lang="fr"><head><meta charset="utf-8">
 <title>La charte en situation — Régis Blanchet</title>
 <style>
-@font-face{font-family:'Cormorant Garamond';src:url(../fonts/CormorantGaramond-Semibold.ttf);font-weight:600}
-@font-face{font-family:Inter;src:url(../fonts/Inter-Regular.ttf);font-weight:400}
-@font-face{font-family:Inter;src:url(../fonts/Inter-Semibold.ttf);font-weight:600}
-@font-face{font-family:Inter;src:url(../fonts/Inter-Bold.ttf);font-weight:700}
-:root{--navy:#132D59;--deep:#0B1F3F;--ivory:#F8F8F6;--bronze:#BD8B57;--bronze-l:#D5B894;--bordeaux:#983F49;--green:#2E6B57;--ink:#2B3442;--soft:#5E6673;--line:#E2E0DA}
+@font-face{font-family:'Playfair Display';src:url(fonts/playfair-display-latin-700-normal.woff2);font-weight:600}@font-face{font-family:'Playfair Display';src:url(fonts/playfair-display-latin-700-italic.woff2);font-weight:600;font-style:italic}@font-face{font-family:'Playfair Display';src:url(fonts/playfair-display-latin-600-normal.woff2);font-weight:500}@font-face{font-family:'Playfair Display';src:url(fonts/playfair-display-latin-600-italic.woff2);font-weight:500;font-style:italic}
+@font-face{font-family:'Nunito Sans';src:url(fonts/nunito-sans-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:'Nunito Sans';src:url(fonts/nunito-sans-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:'Nunito Sans';src:url(fonts/nunito-sans-latin-700-normal.woff2);font-weight:700}
+:root{--navy:#24365A;--deep:#1B2945;--ivory:#F9F8F5;--bronze:#BD8751;--bronze-l:#D9B68F;--bordeaux:#B7303C;--green:#8C5F33;--ink:#2B3550;--soft:#5D6785;--line:#E2E0DA}
 @page{size:297mm 210mm;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600}
+body{font-family:'Nunito Sans',sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.serif{font-family:'Playfair Display',Georgia,serif;font-weight:600}
 .page{width:297mm;height:210mm;position:relative;overflow:hidden;background:var(--ivory);padding:13mm 15mm 0;page-break-after:always}
-.kicker{font-size:7.5pt;font-weight:700;letter-spacing:.16em;color:var(--bronze);text-transform:uppercase}
-h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 2mm}
+.kicker{font-size:7.5pt;font-weight:700;letter-spacing:.16em;color:var(--bordeaux);text-transform:uppercase}
+h1{font:600 30pt/1.02 'Playfair Display',serif;color:var(--navy);margin:3mm 0 2mm}
 .lead{font-size:9pt;color:var(--soft);max-width:205mm;line-height:1.55}
 .foot{position:absolute;left:15mm;right:15mm;bottom:7mm;display:flex;justify-content:space-between;font-size:6.5pt;letter-spacing:.08em;color:#8A8F98;border-top:1px solid var(--line);padding-top:2.2mm;text-transform:uppercase}
 .foot b{color:var(--bronze);font-weight:600}
@@ -24,7 +24,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .phone{width:72mm;background:#0E0F12;border-radius:9mm;padding:3.2mm;box-shadow:0 6mm 12mm rgba(11,31,63,.18)}
 .screen{background:#fff;border-radius:6.5mm;overflow:hidden}
 .ph-top{display:flex;align-items:center;gap:2.2mm;padding:3.4mm 3.4mm 2.4mm}
-.avatar{width:7.5mm;height:7.5mm;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font:600 9pt 'Cormorant Garamond',serif;border:1.2px solid var(--bronze)}
+.avatar{width:7.5mm;height:7.5mm;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font:600 9pt 'Playfair Display',serif;border:1.2px solid var(--bronze)}
 .ph-name{font-size:6.6pt;font-weight:700;color:#111}
 .ph-name small{display:block;font-weight:400;color:#777;font-size:5.6pt}
 .post{width:100%;aspect-ratio:1/1;position:relative;overflow:hidden}
@@ -39,12 +39,12 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 /* Post commun */
 .pnav{background:var(--navy);color:#fff;padding:7% 7.5%}
 .mono{display:flex;align-items:center;gap:2mm}
-.mono .m{width:6mm;height:6mm;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;font:600 8pt 'Cormorant Garamond',serif;position:relative}
+.mono .m{width:6mm;height:6mm;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;font:600 8pt 'Playfair Display',serif;position:relative}
 .mono .m:after{content:'';position:absolute;left:1.2mm;right:1.2mm;bottom:.9mm;height:.4mm;background:var(--bronze)}
 .mono span{font-size:4.6pt;font-weight:700;letter-spacing:.14em;line-height:1.35}
 .mono span small{display:block;color:var(--bronze-l);font-size:4pt}
 .tag{font-size:4.6pt;font-weight:700;letter-spacing:.16em;color:var(--bronze-l);margin-top:9%}
-.big{font:600 17pt/1.0 'Cormorant Garamond',serif;margin-top:3%}
+.big{font:600 17pt/1.0 'Playfair Display',serif;margin-top:3%}
 .rule{width:12mm;height:.7mm;background:var(--bronze);margin:5% 0}
 .small{font-size:6pt;line-height:1.5;color:#E3E8F0}
 .psrc{position:absolute;left:7.5%;right:7.5%;bottom:5.5%;border-top:.3mm solid rgba(255,255,255,.25);padding-top:2%;font-size:4.2pt;letter-spacing:.06em;color:#C9D2DF;display:flex;justify-content:space-between}
@@ -54,7 +54,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .pnum .mono .m{background:var(--navy);color:#fff}
 .pnum .mono span{color:var(--navy)}
 .pnum .tag{color:var(--green)}
-.num{font:600 34pt/0.9 'Cormorant Garamond',serif;color:var(--navy);margin-top:6%}
+.num{font:600 34pt/0.9 'Playfair Display',serif;color:var(--navy);margin-top:6%}
 .num-l{font-size:7pt;color:var(--green);font-weight:600;margin-top:1.5%}
 .bars{margin-top:7%;display:grid;gap:1.6mm}
 .bar{display:grid;grid-template-columns:7mm 1fr 13mm;align-items:center;gap:1.5mm;font-size:5pt;color:var(--soft)}
@@ -83,7 +83,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .card .mono .m{width:7mm;height:7mm;font-size:9.5pt}
 .card .mono span{font-size:5.4pt}
 .card .psrc{font-size:5pt}
-.cnum{position:absolute;right:7%;top:6%;font:600 15pt 'Cormorant Garamond',serif;color:var(--bronze)}
+.cnum{position:absolute;right:7%;top:6%;font:600 15pt 'Playfair Display',serif;color:var(--bronze)}
 .light{background:#fff;color:var(--navy)}
 .light .small{color:var(--ink)}
 .light .mono .m{background:var(--navy);color:#fff}
@@ -92,7 +92,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .light .psrc{color:#8A8F98;border-color:var(--line)}
 .list{margin-top:4%;display:grid;gap:2.2mm}
 .list div{display:grid;grid-template-columns:4mm 1fr;font-size:7.1pt;line-height:1.35}
-.list div b{color:var(--bronze);font:600 10pt/1 'Cormorant Garamond',serif}
+.list div b{color:var(--bronze);font:600 10pt/1 'Playfair Display',serif}
 .below{display:grid;grid-template-columns:repeat(4,1fr);gap:5mm;margin-top:3mm}
 .below p{font-size:7pt;color:var(--soft);line-height:1.45}
 .below p b{color:var(--navy);display:block;font-size:7.4pt;margin-bottom:.6mm}
@@ -100,27 +100,27 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .two{display:grid;grid-template-columns:1fr 1fr;gap:12mm;margin-top:6mm;align-items:start}
 .a4{width:105mm;aspect-ratio:210/297;background:#fff;box-shadow:0 5mm 11mm rgba(11,31,63,.16);position:relative;overflow:hidden}
 .lt-head{background:var(--navy);color:#fff;padding:5mm 6mm 4.5mm;display:flex;justify-content:space-between;align-items:end}
-.lt-head .t{font:600 19pt/0.9 'Cormorant Garamond',serif}
-.lt-head .t small{display:block;font:700 4.6pt Inter;letter-spacing:.16em;color:var(--bronze-l);margin-top:1.6mm}
+.lt-head .t{font:600 19pt/0.9 'Playfair Display',serif}
+.lt-head .t small{display:block;font:700 4.6pt 'Nunito Sans';letter-spacing:.16em;color:var(--bronze-l);margin-top:1.6mm}
 .lt-head .n{text-align:right;font-size:4.8pt;letter-spacing:.12em;color:#C9D2DF;line-height:1.6}
-.lt-head .n b{display:block;font:600 13pt 'Cormorant Garamond',serif;color:#fff;letter-spacing:0}
+.lt-head .n b{display:block;font:600 13pt 'Playfair Display',serif;color:#fff;letter-spacing:0}
 .lt-photo{height:58mm;position:relative;overflow:hidden}
 .lt-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 16%}
 .lt-photo span{position:absolute;left:0;bottom:0;background:rgba(11,31,63,.85);color:#fff;font-size:4.4pt;letter-spacing:.08em;padding:1.2mm 2.4mm}
 .lt-body{padding:5mm 6mm}
-.lt-h{font:600 15pt/1.02 'Cormorant Garamond',serif;color:var(--navy)}
+.lt-h{font:600 15pt/1.02 'Playfair Display',serif;color:var(--navy)}
 .lt-sub{font-size:5.6pt;color:var(--soft);line-height:1.55;margin-top:2mm}
 .lt-sum{margin-top:4mm;border-top:.3mm solid var(--line)}
 .lt-sum div{display:grid;grid-template-columns:7mm 1fr 6mm;align-items:center;padding:1.8mm 0;border-bottom:.3mm solid var(--line);font-size:5.6pt}
-.lt-sum div i{font-style:normal;font:600 9pt 'Cormorant Garamond',serif;color:var(--bronze)}
+.lt-sum div i{font-style:normal;font:600 9pt 'Playfair Display',serif;color:var(--bronze)}
 .lt-sum div b{color:var(--navy);font-size:6pt;display:block}
-.lt-sum div em{font-style:normal;color:var(--soft);font-family:Inter;font-weight:400}
+.lt-sum div em{font-style:normal;color:var(--soft);font-family:'Nunito Sans';font-weight:400}
 .lt-sum div span{text-align:right;color:var(--soft)}
 .lt-foot{position:absolute;bottom:0;left:0;right:0;padding:2.4mm 6mm;background:var(--ivory);font-size:4.4pt;letter-spacing:.08em;color:var(--soft);display:flex;justify-content:space-between}
 .inner{padding:5mm 6mm}
 .rub{display:flex;align-items:center;gap:2mm;font-size:4.8pt;font-weight:700;letter-spacing:.16em;color:var(--bordeaux)}
 .rub:before{content:'';width:5mm;height:.5mm;background:var(--bordeaux)}
-.inner h3{font:600 14pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:2mm 0 2.4mm}
+.inner h3{font:600 14pt/1.02 'Playfair Display',serif;color:var(--navy);margin:2mm 0 2.4mm}
 .inner p{font-size:5.6pt;line-height:1.6;color:var(--ink)}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin-top:3mm}
 .duo img{width:100%;height:36mm;object-fit:cover;object-position:50% 15%}
@@ -132,7 +132,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .visit div{border-top:.5mm solid var(--navy);padding-top:1.3mm;font-size:4.8pt;color:var(--soft)}
 .visit div b{display:block;color:var(--navy);font-size:5.4pt}
 .side{display:flex;flex-direction:column;gap:3mm}
-.side h4{font:600 13pt 'Cormorant Garamond',serif;color:var(--navy)}
+.side h4{font:600 13pt 'Playfair Display',serif;color:var(--navy)}
 .side p{font-size:7.4pt;line-height:1.5;color:var(--soft)}
 /* ---------- Identité ---------- */
 .grid-id{display:grid;grid-template-columns:1.25fr 1fr;gap:9mm;margin-top:6mm}
@@ -140,7 +140,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .banner img{position:absolute;right:0;top:0;height:100%;width:42%;object-fit:cover;object-position:50% 20%}
 .banner:after{content:'';position:absolute;right:42%;top:0;bottom:0;width:18mm;background:linear-gradient(to right,var(--navy),rgba(19,45,89,0));transform:translateX(100%)}
 .banner .bt{position:absolute;left:8mm;top:7mm;color:#fff;z-index:2}
-.banner .bt b{font:600 19pt/1 'Cormorant Garamond',serif;display:block}
+.banner .bt b{font:600 19pt/1 'Playfair Display',serif;display:block}
 .banner .bt span{display:block;font-size:5.4pt;letter-spacing:.2em;font-weight:700;color:var(--bronze-l);margin-top:2mm}
 .banner .bt small{display:block;font-size:5.2pt;color:#C9D2DF;margin-top:3mm}
 .banner .edge{position:absolute;left:0;top:0;bottom:0;width:1.3mm;background:var(--bronze);z-index:3}
@@ -149,7 +149,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .cards{display:flex;gap:5mm}
 .bc{width:62mm;height:40mm;box-shadow:0 2.5mm 6mm rgba(11,31,63,.15);position:relative;overflow:hidden}
 .bc.front{background:var(--navy);color:#fff;padding:6mm}
-.bc.front b{font:600 16pt/1 'Cormorant Garamond',serif;display:block;margin-top:5mm}
+.bc.front b{font:600 16pt/1 'Playfair Display',serif;display:block;margin-top:5mm}
 .bc.front span{font-size:4.8pt;letter-spacing:.2em;font-weight:700;color:var(--bronze-l);display:block;margin-top:1.8mm}
 .bc.front .rule{width:9mm;margin:3mm 0 0}
 .bc.front .rf{position:absolute;right:5mm;bottom:5mm;font-size:4.4pt;color:#C9D2DF;letter-spacing:.1em}
@@ -160,7 +160,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .sig{background:#fff;padding:5mm 6mm;box-shadow:0 2.5mm 6mm rgba(11,31,63,.1);font-size:6pt;line-height:1.55}
 .sig .row{display:flex;gap:4mm;align-items:center}
 .sig .bar2{width:.8mm;align-self:stretch;background:var(--bronze)}
-.sig b.n{font:600 13pt/1 'Cormorant Garamond',serif;color:var(--navy);display:block}
+.sig b.n{font:600 13pt/1 'Playfair Display',serif;color:var(--navy);display:block}
 .sig span.f{font-size:5pt;letter-spacing:.16em;font-weight:700;color:var(--bronze);display:block;margin:1mm 0 1.6mm}
 .sig a{color:var(--navy);text-decoration:none;border-bottom:.2mm solid var(--bronze)}
 .cp{background:#fff;box-shadow:0 5mm 11mm rgba(11,31,63,.16);aspect-ratio:210/297;width:100mm;position:relative;overflow:hidden}
@@ -169,7 +169,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .cp-h em{font-style:normal;font-size:5pt;letter-spacing:.16em;color:var(--bronze-l);font-weight:700}
 .cp-b{padding:6mm 7mm}
 .cp-b .k{font-size:5pt;letter-spacing:.16em;color:var(--bronze);font-weight:700}
-.cp-b h3{font:600 15pt/1.05 'Cormorant Garamond',serif;color:var(--navy);margin:2mm 0}
+.cp-b h3{font:600 15pt/1.05 'Playfair Display',serif;color:var(--navy);margin:2mm 0}
 .cp-b .d{font-size:5.4pt;color:var(--soft)}
 .cp-b .r{width:12mm;height:.5mm;background:var(--bronze);margin:3.5mm 0}
 .cp-b p{font-size:6pt;line-height:1.65;margin-bottom:2.4mm}
@@ -181,7 +181,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .rules{display:grid;grid-template-columns:repeat(3,1fr);gap:6mm;margin-top:7mm}
 .rule-c{background:#fff;padding:6mm;border-top:1.2mm solid var(--navy)}
 .rule-c:nth-child(2){border-color:var(--bordeaux)}.rule-c:nth-child(3){border-color:var(--green)}
-.rule-c h3{font:600 15pt/1.05 'Cormorant Garamond',serif;color:var(--navy);margin-bottom:3mm}
+.rule-c h3{font:600 15pt/1.05 'Playfair Display',serif;color:var(--navy);margin-bottom:3mm}
 .rule-c ul{list-style:none;display:grid;gap:2mm}
 .rule-c li{font-size:7.6pt;line-height:1.45;padding-left:4mm;position:relative}
 .rule-c li:before{content:'';position:absolute;left:0;top:1.6mm;width:1.6mm;height:1.6mm;background:var(--bronze)}
@@ -189,11 +189,11 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .palette{display:flex;margin-top:7mm;height:17mm;box-shadow:0 2mm 5mm rgba(11,31,63,.1)}
 .palette div{flex:1;padding:3mm 4mm;font-size:6.2pt;display:flex;flex-direction:column;justify-content:flex-end;color:#fff}
 .palette div b{font-weight:700;font-size:6.6pt}
-.palette .p1{flex:3;background:var(--navy)}.palette .p2{flex:2.2;background:var(--ivory);color:var(--navy)}.palette .p3{background:var(--bronze)}.palette .p4{background:var(--bordeaux)}.palette .p5{background:var(--green)}
+.palette .p1{flex:3;background:var(--navy)}.palette .p2{flex:2.2;background:var(--ivory);color:var(--navy)}.palette .p3{background:var(--bronze)}.palette .p4{background:var(--bordeaux)}.palette .p5{background:#5D3F2D}
 .type{display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin-top:5mm}
 .type div{background:#fff;padding:4mm 5mm;display:flex;align-items:baseline;gap:5mm}
-.type .s{font:600 26pt/1 'Cormorant Garamond',serif;color:var(--navy)}
-.type .i{font:600 20pt/1 Inter;color:var(--navy)}
+.type .s{font:600 26pt/1 'Playfair Display',serif;color:var(--navy)}
+.type .i{font:600 20pt/1 'Nunito Sans';color:var(--navy)}
 .type small{font-size:7pt;color:var(--soft);line-height:1.4}
 /* Couverture */
 .cover{background:var(--navy);color:#fff;padding:0;display:grid;grid-template-columns:1fr 1fr}
@@ -208,11 +208,11 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
 .next{margin-top:8mm;background:var(--navy);color:#fff;padding:5mm 6mm;display:grid;grid-template-columns:38mm repeat(4,1fr);gap:5mm;align-items:center}
 .next .kicker{color:var(--bronze-l)}
 .next div{font-size:8pt;line-height:1.4;color:#D6DDE8;border-left:.4mm solid rgba(255,255,255,.2);padding-left:4mm}
-.next div b{font:600 12pt/1.1 'Cormorant Garamond',serif;color:#fff;display:block}
+.next div b{font:600 12pt/1.1 'Playfair Display',serif;color:#fff;display:block}
 .circuit{margin-top:8mm}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin-top:3mm}
 .steps div{background:#fff;padding:4mm;font-size:7.2pt;color:var(--soft);line-height:1.4;position:relative}
-.steps div i{font-style:normal;font:600 16pt/1 'Cormorant Garamond',serif;color:var(--bronze);display:block;margin-bottom:1.5mm}
+.steps div i{font-style:normal;font:600 16pt/1 'Playfair Display',serif;color:var(--bronze);display:block;margin-bottom:1.5mm}
 .steps div b{display:block;color:var(--navy);font-size:7.8pt;margin-bottom:.8mm}
 .steps div:not(:last-child):after{content:'→';position:absolute;right:-2.6mm;top:50%;transform:translateY(-50%);color:var(--bronze);font-size:9pt;z-index:2}
 </style></head><body>
@@ -222,7 +222,7 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
   <div class="l">
     <div class="kicker">Complément au dossier · Réunion du 21 octobre 2026</div>
     <h1>La charte,<br><em>en situation.</em></h1>
-    <p>Les mêmes repères que le site — bleu nuit, ivoire, bronze, Cormorant Garamond et Inter — appliqués à de vrais contenus : uniquement des faits publics déjà vérifiés et les portraits d’origine.</p>
+    <p>Les mêmes repères que le site — bleu nuit, rouge, caramel, Playfair Display et Nunito Sans, comme le journal de campagne — appliqués à de vrais contenus : uniquement des faits publics déjà vérifiés et les portraits d’origine.</p>
     <p style="margin-top:4mm;font-size:8.5pt;color:#AFC0D6">Réseaux sociaux · carrousel pédagogique · la lettre de Régis Blanchet · communiqué · identité quotidienne · règles d’usage</p>
     <div class="bottom">Document de travail — non diffusé · aucune citation ni position n’est attribuée au sénateur</div>
   </div>
@@ -410,22 +410,22 @@ h1{font:600 30pt/1.02 'Cormorant Garamond',serif;color:var(--navy);margin:3mm 0 
   <div class="kicker">05 · La charte en une page</div>
   <h1>Ce qui rend la charte reconnaissable</h1>
   <div class="palette">
-    <div class="p1"><b>Bleu nuit</b>#132D59 · signature, aplats</div>
-    <div class="p2"><b>Ivoire</b>#F8F8F6 · fond, respiration</div>
-    <div class="p3"><b>Bronze</b>#BD8B57 · filets</div>
-    <div class="p4"><b>Bordeaux</b>#983F49 · Indre</div>
-    <div class="p5"><b>Vert</b>#2E6B57 · chiffres</div>
+    <div class="p1"><b>Bleu nuit</b>#24365A · titres, aplats</div>
+    <div class="p2"><b>Ivoire</b>#F9F8F5 · fond des pages</div>
+    <div class="p3"><b>Caramel</b>#BD8751 · onglet RB, citations</div>
+    <div class="p4"><b>Rouge</b>#B7303C · surtitres, filets</div>
+    <div class="p5"><b>Brun</b>#5D3F2D · courriers</div>
   </div>
   <div class="type">
-    <div><span class="s">Aa</span><small><b style="color:var(--navy)">Cormorant Garamond</b><br>Titres et chiffres clés · jamais en texte courant</small></div>
-    <div><span class="i">Aa</span><small><b style="color:var(--navy)">Inter</b><br>Texte, légendes, dates, sources</small></div>
+    <div><span class="s">Aa</span><small><b style="color:var(--navy)">Playfair Display</b><br>Titres, nom, citations en italique</small></div>
+    <div><span class="i">Aa</span><small><b style="color:var(--navy)">Nunito Sans</b><br>Texte, surtitres en capitales, légendes</small></div>
   </div>
   <div class="rules">
-    <div class="rule-c"><h3>Toujours</h3><ul><li>Monogramme RB + « Sénateur de l’Indre » sur chaque visuel</li><li>Un filet bronze sous le titre</li><li>Une source et une date en pied</li><li>Photos légendées et créditées</li></ul></div>
-    <div class="rule-c"><h3>Une couleur, un rôle</h3><ul><li>Bleu nuit : Sénat, institution</li><li>Bordeaux : Indre, terrain</li><li>Vert : chiffres et dossiers suivis</li><li>Bronze : accent, jamais en aplat</li></ul></div>
+    <div class="rule-c"><h3>Toujours</h3><ul><li>Monogramme RB + « Sénateur de l’Indre » sur chaque visuel</li><li>Un surtitre rouge en capitales et un filet rouge court</li><li>Une source et une date en pied</li><li>Photos légendées et créditées</li></ul></div>
+    <div class="rule-c"><h3>Une couleur, un rôle</h3><ul><li>Bleu nuit : titres, institution</li><li>Rouge : surtitres et filets</li><li>Caramel : onglet RB, citations</li><li>Brun : courriers et lettres</li></ul></div>
     <div class="rule-c"><h3>Jamais</h3><ul><li class="no">Une citation non validée par le sénateur</li><li class="no">Un lieu ou une date devinés sur une photo</li><li class="no">Plus d’un message par visuel</li><li class="no">Le logo du Sénat hors version officielle</li></ul></div>
   </div>
   <div class="circuit"><span class="kicker">Le circuit avant chaque publication</span><div class="steps"><div><i>1</i><b>Kous</b>prépare angle, texte et visuel</div><div><i>2</i><b>Référents Paris / Indre</b>vérifient faits et photos</div><div><i>3</i><b>Sénateur ou délégataire</b>valide citations et positions</div><div><i>4</i><b>Publication</b>puis archivage sur le site</div></div></div>
-  <div class="foot"><span>Charte issue du site · à confirmer le 21 octobre 2026</span><b>06</b></div>
+  <div class="foot"><span>Charte du journal de campagne · transmise par le sénateur le 22 octobre 2026</span><b>06</b></div>
 </section>
 </body></html>

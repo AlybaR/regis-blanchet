@@ -50,6 +50,6 @@ Le titre annonce un fait vérifié. Le premier paragraphe répond à « quoi, qu
 | Canaux | Quels comptes représentent la communication du mandat ? |
 | Photos | Banque autorisée, crédit, personnes et lieux identifiés |
 | Production | Qui rédige, vérifie, valide, publie et archive ? |
-| Rythme | Fréquence réaliste de la lettre, du terrain et des dossiers |
+| Rythme | À fixer avec le sénateur ; aucune fréquence annoncée dans les supports avant sa décision |
 
 **Vérification finale pour chaque pièce :** date et source primaire, texte relu, visuel autorisé, citation approuvée, lien testé, bon compte de diffusion, version archivée.

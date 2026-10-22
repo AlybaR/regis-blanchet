@@ -11,4 +11,4 @@ Maquettes HTML rendues en PDF « aplati » (pages en image haute définition, re
 
 Règles tenues : aucune image générée ; aucune citation inventée (édito = extraits de la profession de foi) ; faits publics sourcés ; crédits photo dans `photos/CREDITS.md`.
 
-Rendu : Chromium (Playwright) → captures 240 dpi → `img2pdf`. Polices : Cormorant Garamond et Inter (licence OFL, dossier `fonts/`).
+Rendu : Chromium (Playwright) → captures 240 dpi → `img2pdf`. Polices : Playfair Display et Nunito Sans (licence OFL, dossier `fonts/`), déclarées sous les alias CG et IN dans `base.css`.

@@ -25,7 +25,7 @@
 
 La [signature de courriel](modele-signature-email.html) est aussi fournie avec des champs de coordonnées à valider.
 
-Les fichiers SVG s’ouvrent dans Inkscape, Illustrator ou un éditeur de texte. Les champs entre crochets doivent être remplacés. Les polices Cormorant Garamond et Inter sont incluses dans l’archive avec leurs licences OFL ; les installer localement pour retrouver le rendu attendu dans un logiciel de création.
+Les fichiers SVG s’ouvrent dans Inkscape, Illustrator ou un éditeur de texte. Les champs entre crochets doivent être remplacés. Les polices Playfair Display et Nunito Sans sont incluses dans l’archive avec leurs licences OFL ; les installer localement pour retrouver le rendu attendu dans un logiciel de création.
 
 ## Références de la charte (mise à jour du 22 octobre 2026)
 

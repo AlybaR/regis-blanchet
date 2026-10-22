@@ -18,6 +18,24 @@ window.TRAVAUX = {
  },
  "activites": [
   {
+   "id": "c324d282ee",
+   "date": "2026-10-21",
+   "heure": "15:00",
+   "type": "Séance publique",
+   "titre": "Questions d'actualité au gouvernement",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "a037f73ed0",
+   "date": "2026-10-21",
+   "heure": "09:30",
+   "type": "Commission",
+   "titre": "Réunion de la commission de l'aménagement du territoire et du développement durable",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
    "id": "7735e1d438",
    "date": "2026-10-14",
    "heure": "15:00",
@@ -73,8 +91,8 @@ window.TRAVAUX = {
   }
  ],
  "questions": [],
- "mis_a_jour_le": "2026-10-20",
- "mis_a_jour_le_fr": "20 octobre 2026",
+ "mis_a_jour_le": "2026-10-22",
+ "mis_a_jour_le_fr": "22 octobre 2026",
  "sources": [
   {
    "libelle": "Fiche officielle du sénateur",

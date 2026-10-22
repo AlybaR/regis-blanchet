@@ -23,25 +23,25 @@ PDF = ROOT / "output" / "pdf" / "kit-communication-regis-blanchet.pdf"
 MODELS.mkdir(parents=True, exist_ok=True)
 PDF.parent.mkdir(parents=True, exist_ok=True)
 
-NAVY = "#132D59"
-DEEP = "#0D2144"
-CREAM = "#F8F8F6"
-ALT = "#F1EFEA"
-INK = "#222222"
-MUTED = "#5A5E65"
-BRONZE = "#BD8B57"
-BRONZE_DARK = "#8A5A2E"
-BURGUNDY = "#983F49"
+NAVY = "#24365A"
+DEEP = "#1B2945"
+CREAM = "#F9F8F5"
+ALT = "#F2EFE9"
+INK = "#211E1E"
+MUTED = "#5D6785"
+BRONZE = "#BD8751"
+BRONZE_DARK = "#B7303C"
+BURGUNDY = "#B7303C"
 WHITE = "#FFFFFF"
 W, H = 842, 595
 
 
 def register_fonts() -> None:
     fonts = {
-        "Serif": KIT / "fonts" / "CormorantGaramond-Semibold.ttf",
-        "SerifBold": KIT / "fonts" / "CormorantGaramond-Semibold.ttf",
-        "Sans": KIT / "fonts" / "Inter-Regular.ttf",
-        "SansBold": KIT / "fonts" / "Inter-Bold.ttf",
+        "Serif": KIT / "fonts" / "PlayfairDisplay-Bold.ttf",
+        "SerifBold": KIT / "fonts" / "PlayfairDisplay-Bold.ttf",
+        "Sans": KIT / "fonts" / "NunitoSans-Regular.ttf",
+        "SansBold": KIT / "fonts" / "NunitoSans-Bold.ttf",
     }
     for name, path in fonts.items():
         if not path.exists():
@@ -88,9 +88,11 @@ def rule(c, x1, y, x2, color=BRONZE, thickness=1.3):
 
 
 def mark(c, x, y, size=42, dark=True):
+    """Monogramme RB du journal de campagne (logos/rb-fond-*.png)."""
     rect(c, x, y, size, size, NAVY if dark else WHITE)
-    txt(c, x + 8, y + size * .35, "RB", size * .39, "Serif", WHITE if dark else NAVY)
-    rect(c, x + 8, y + 7, size - 16, 2, BRONZE)
+    img = KIT / "logos" / ("rb-fond-fonce.png" if dark else "rb-fond-clair.png")
+    w = size * .78; h = w * 165 / 246
+    c.drawImage(str(img), x + (size - w) / 2, y + (size - h) / 2, w, h, mask="auto")
 
 
 def header(c, section, page):
@@ -127,14 +129,14 @@ def page_cover(c):
     txt(c, 52, 400, "KIT DE", 36, "Serif", WHITE)
     txt(c, 52, 351, "COMMUNICATION", 31, "Serif", WHITE)
     rect(c, 52, 323, 52, 3, BRONZE)
-    lines(c, 52, 286, "Décliner la charte actuelle sur les supports du mandat.", 290, 17, 23, "Serif", "#EBE8E2")
+    lines(c, 52, 286, "Décliner la charte du journal de campagne sur les supports du mandat.", 290, 17, 23, "Serif", "#EBE8E2")
     txt(c, 52, 67, "PROPOSITION À DISCUTER AVEC L’ÉQUIPE", 8, "SansBold", "#D5B894", .8)
     txt(c, 52, 47, "20 octobre 2026", 9, "Sans", WHITE)
 
     txt(c, 440, 519, "LE MÊME VISAGE, PARTOUT", 9, "SansBold", BRONZE_DARK, 1)
     txt(c, 440, 469, "Un système simple", 31, "Serif", NAVY)
     txt(c, 440, 431, "pour la durée du mandat.", 28, "Serif", NAVY)
-    lines(c, 441, 389, "Le site sert de référence visuelle. Ce dossier apporte des formats prêts à adapter, avec les mêmes couleurs, la même signature et des règles de publication claires.", 332, 11, 17, "Sans", MUTED)
+    lines(c, 441, 389, "Le journal de campagne sert de référence visuelle. Ce dossier apporte des formats prêts à adapter, avec les mêmes couleurs, la même signature et des règles de publication claires.", 332, 11, 17, "Sans", MUTED)
     for y, number, label, detail in [
         (258, "01", "Réseaux", "faits publics · terrain · dossiers"),
         (204, "02", "Lettre et documents", "couverture · en-tête · signature"),
@@ -149,18 +151,18 @@ def page_cover(c):
 
 def page_identity(c):
     header(c, "Socle visuel", 2)
-    section_title(c, "La base retenue", "Une seule identité pour tous les supports.", "Aucune nouvelle charte : ces repères reprennent le site déjà approuvé comme base de discussion.")
-    swatches = [(NAVY, "Bleu nuit", "#132D59", WHITE), (CREAM, "Fond clair", "#F8F8F6", NAVY), (BRONZE, "Accent bronze", "#BD8B57", DEEP), (BURGUNDY, "Accent ponctuel", "#983F49", WHITE)]
+    section_title(c, "La base retenue", "Une seule identité pour tous les supports.", "Repères du journal de campagne et de la lettre de candidature, transmis par le sénateur le 22 octobre 2026.")
+    swatches = [(NAVY, "Bleu nuit", "#24365A", WHITE), (CREAM, "Ivoire", "#F9F8F5", NAVY), (BRONZE, "Caramel", "#BD8751", DEEP), (BURGUNDY, "Rouge", "#B7303C", WHITE)]
     for i, (fill, label, code, ink) in enumerate(swatches):
         x = 48 + i * 190
         rect(c, x, 268, 172, 103, fill, "#E4E0D9" if fill == CREAM else None)
         txt(c, x + 11, 331, label, 11, "SansBold", ink)
         txt(c, x + 11, 284, code, 8, "Sans", ink)
     txt(c, 48, 227, "TITRES", 8, "SansBold", BRONZE_DARK, .7)
-    txt(c, 48, 187, "Cormorant Garamond", 26, "Serif", NAVY)
-    txt(c, 48, 166, "Élégance calme, grands titres courts.", 9, "Sans", MUTED)
+    txt(c, 48, 187, "Playfair Display", 26, "Serif", NAVY)
+    txt(c, 48, 166, "Titres en gras, prénom en italique.", 9, "Sans", MUTED)
     txt(c, 430, 227, "TEXTES ET INFORMATIONS", 8, "SansBold", BRONZE_DARK, .7)
-    txt(c, 430, 190, "Inter", 22, "SansBold", NAVY)
+    txt(c, 430, 190, "Nunito Sans", 22, "SansBold", NAVY)
     txt(c, 430, 166, "Lisibilité sur écran et sur papier.", 9, "Sans", MUTED)
     rect(c, 48, 69, 746, 72, ALT)
     mark(c, 66, 87, 37)
@@ -321,8 +323,8 @@ def svg(width, height, body, defs=""):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img">
 <title>Maquette de communication Régis Blanchet - à personnaliser</title>
 <defs><style><![CDATA[
-.serif {{ font-family: 'Cormorant Garamond', Georgia, serif; }}
-.sans {{ font-family: Inter, Arial, sans-serif; }}
+.serif {{ font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }}
+.sans {{ font-family: 'Nunito Sans', Avenir, Arial, sans-serif; }}
 ]]></style>{defs}</defs>
 {body}
 </svg>'''

@@ -27,9 +27,9 @@ La [signature de courriel](modele-signature-email.html) est aussi fournie avec d
 
 Les fichiers SVG s’ouvrent dans Inkscape, Illustrator ou un éditeur de texte. Les champs entre crochets doivent être remplacés. Les polices Cormorant Garamond et Inter sont incluses dans l’archive avec leurs licences OFL ; les installer localement pour retrouver le rendu attendu dans un logiciel de création.
 
-## Références de la charte actuelle
+## Références de la charte (mise à jour du 22 octobre 2026)
 
-Bleu nuit `#132D59`, fond clair `#F8F8F6`, bronze `#BD8B57`, accent bordeaux `#983F49`. Titres en Cormorant Garamond, textes en Inter. La signature emploie le nom complet et « Sénateur de l’Indre ». Ne pas employer l’emblème officiel du Sénat comme logo de ce kit.
+La charte suit le journal de campagne et la lettre de candidature transmis par le sénateur (voir `Documents\Sénat\Charte_graphique\CHARTE_GRAPHIQUE.md`). Bleu nuit `#24365A`, rouge `#B7303C` (surtitres, filets), caramel `#BD8751` (onglet RB, citations), brun `#5D3F2D` (courriers), ivoire `#F9F8F5`. Titres en Playfair Display, textes en Nunito Sans (équivalents libres d'Abril Display et d'Avenir). Monogramme RB extrait du journal (`logos/`).
 
 ## Avant toute diffusion
 

@@ -18,6 +18,15 @@ window.TRAVAUX = {
  },
  "activites": [
   {
+   "id": "fc05ed1dad",
+   "date": "2026-10-27",
+   "heure": "16:40",
+   "type": "Séance publique",
+   "titre": "Projet de loi : Casseurs-payeurs",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
    "id": "c324d282ee",
    "date": "2026-10-21",
    "heure": "15:00",
@@ -91,8 +100,8 @@ window.TRAVAUX = {
   }
  ],
  "questions": [],
- "mis_a_jour_le": "2026-10-22",
- "mis_a_jour_le_fr": "22 octobre 2026",
+ "mis_a_jour_le": "2026-10-28",
+ "mis_a_jour_le_fr": "28 octobre 2026",
  "sources": [
   {
    "libelle": "Fiche officielle du sénateur",

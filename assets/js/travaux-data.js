@@ -18,6 +18,33 @@ window.TRAVAUX = {
  },
  "activites": [
   {
+   "id": "78f7f99c76",
+   "date": "2026-10-28",
+   "heure": "16:30",
+   "type": "Séance publique",
+   "titre": "Suite PJL Protection des enfants",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "0a6ec426ab",
+   "date": "2026-10-28",
+   "heure": "15:00",
+   "type": "Séance publique",
+   "titre": "Questions d'actualité au gouvernement",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "3f51a896ec",
+   "date": "2026-10-28",
+   "heure": "11:00",
+   "type": "Commission",
+   "titre": "Réunion de la commission de l'aménagement du territoire et du développement durable",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
    "id": "fc05ed1dad",
    "date": "2026-10-27",
    "heure": "16:40",
@@ -100,8 +127,8 @@ window.TRAVAUX = {
   }
  ],
  "questions": [],
- "mis_a_jour_le": "2026-10-28",
- "mis_a_jour_le_fr": "28 octobre 2026",
+ "mis_a_jour_le": "2026-10-29",
+ "mis_a_jour_le_fr": "29 octobre 2026",
  "sources": [
   {
    "libelle": "Fiche officielle du sénateur",

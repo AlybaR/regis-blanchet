@@ -10,16 +10,18 @@ body{background:#888;display:flex;flex-wrap:wrap;gap:40px;padding:40px}
 .h i{font-weight:500;font-style:italic}
 .rule{width:120px;height:6px;background:var(--bronze)}
 .p{font:400 34px/1.45 'IN'}
+@font-face{font-family:'GV';src:url(fonts/great-vibes-latin-400-normal.woff2)}
+@font-face{font-family:'GV';src:url(fonts/great-vibes-latin-ext-400-normal.woff2);unicode-range:U+0100-024F}
+.sig .nm{display:flex;flex-direction:column;line-height:1;text-shadow:0 2px 10px rgba(0,0,0,.45)}
+.sig .nm .pr{font:400 66px/.9 'GV';color:#fff;margin-left:2px}
+.sig .nm .no{font:900 44px/1 'IN';letter-spacing:.03em;color:#fff;margin:-18px 0 0 28px}
+.sig .nm .fn{font:800 15px/1 'IN';letter-spacing:.2em;color:#E8C9A4;margin:9px 0 0 30px}
+.sig.dark .nm{text-shadow:none}.sig.dark .nm .pr,.sig.dark .nm .no{color:var(--navy)}.sig.dark .nm .fn{color:var(--green)}
 .sig{position:absolute;left:84px;right:84px;bottom:64px;display:flex;align-items:center;gap:22px;padding-top:30px;border-top:2px solid rgba(255,255,255,.22)}
-.sig .m{width:74px;height:74px;display:flex;align-items:center;justify-content:center;font:600 40px 'CG';background:#fff;color:var(--navy);position:relative;flex:none}
-.sig .m:after{content:'';position:absolute;left:14px;right:14px;bottom:11px;height:4px;background:var(--bronze)}
 .sig .n{white-space:nowrap;font:700 21px/1.35 'IN';letter-spacing:.16em;color:#fff}
 .sig .n small{display:block;font-size:17px;color:var(--bronze-l)}
 .sig .r{margin-left:auto;font:600 17px/1.4 'IN';letter-spacing:.06em;color:rgba(255,255,255,.75);text-align:right}
 .sig.dark{border-color:var(--line)}.sig.dark .m{background:var(--navy);color:#fff}.sig.dark .n{color:var(--navy)}.sig.dark .n small{color:var(--bronze)}.sig.dark .r{color:var(--soft)}
-.sig .lg{display:flex;align-items:center;gap:16px;background:#fff;border-radius:12px;padding:9px 16px;margin-left:22px;flex:none}
-.sig .lg img{height:56px;width:auto;display:block}
-.sig .lg img+img{height:46px}
 .sig.dark .lg{border:2px solid var(--line)}
 .count{position:absolute;top:70px;right:84px;font:600 22px 'IN';letter-spacing:.12em;color:rgba(255,255,255,.7)}
 .ph{position:absolute;inset:0}.ph img{width:100%;height:100%;object-fit:cover}
@@ -86,7 +88,7 @@ body{background:#888;display:flex;flex-wrap:wrap;gap:40px;padding:40px}
   <div class="pad h" style="top:580px;color:#fff">Une commission,<br><i>à quoi ça sert&nbsp;?</i></div>
   <div class="pad" style="top:840px"><div class="rule"></div></div>
   <div class="pad p" style="top:890px;color:#D9E0EA">Depuis le 6 octobre 2026, Régis Blanchet siège à la commission de l’aménagement du territoire et du développement durable. Explications en 4 cartes.</div>
-  <div class="sig"><span class="m">RB</span><span class="n">RÉGIS BLANCHET<small>SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span><span class="r">FAIRE DÉFILER →</span></div>
+  <div class="sig"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span><span class="r">FAIRE DÉFILER →</span></div>
 </div>
 
 <!-- 2 Carte 2 : la mécanique -->
@@ -99,14 +101,14 @@ body{background:#888;display:flex;flex-wrap:wrap;gap:40px;padding:40px}
     <div class="step"><b>2</b><div><h4>Auditionner</h4><p>Ministres, experts, élus et acteurs concernés sont entendus.</p></div></div>
     <div class="step"><b>3</b><div><h4>Contrôler</h4><p>Elle suit l’action du Gouvernement et évalue les politiques publiques.</p></div></div>
   </div>
-  <div class="sig dark"><span class="m">RB</span><span class="n">RÉGIS BLANCHET<small>SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span><span class="r">SOURCE : SENAT.FR</span></div>
+  <div class="sig dark"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span><span class="r">SOURCE : SENAT.FR</span></div>
 </div>
 
 <!-- 3 Regard sur l'Indre — duo -->
 <div class="post" id="duo">
-  <div class="ph"><img src="photos/portrait_duo.jpg" alt=""></div>
-  <div class="stack"><div class="kick" style="color:var(--bronze-l)">Regard sur l’Indre</div><div class="t">Faire entendre la voix de l’Indre <i style="color:var(--bronze-l)">là où se prennent les décisions.</i></div><div class="credit">Régis Blanchet et sa suppléante, Géraldine Rouah · photographie de campagne</div></div>
-  <div class="sig"><span class="m">RB</span><span class="n">RÉGIS BLANCHET<small>SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span><span class="r">PROFESSION DE FOI<br>SEPTEMBRE 2026</span></div>
+  <div class="ph"><img src="photos/portrait_regis.jpg" alt=""></div>
+  <div class="stack"><div class="kick" style="color:var(--bronze-l)">Regard sur l’Indre</div><div class="t">Faire entendre la voix de l’Indre <i style="color:var(--bronze-l)">là où se prennent les décisions.</i></div><div class="credit">Régis Blanchet · photographie de campagne</div></div>
+  <div class="sig"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span><span class="r">PROFESSION DE FOI<br>SEPTEMBRE 2026</span></div>
 </div>
 
 <!-- 4 Le chiffre expliqué -->
@@ -121,7 +123,7 @@ body{background:#888;display:flex;flex-wrap:wrap;gap:40px;padding:40px}
   </div>
   <div class="pad" style="top:720px;font:600 64px/1 'CG';color:var(--navy)">−6 163 habitants en six ans <span style="color:var(--green)">(−2,8 %)</span></div>
   <div class="pad callout" style="top:850px"><strong>Pourquoi c’est utile :</strong> les populations légales servent de base à de nombreuses règles, dont le calcul de dotations de l’État aux communes.</div>
-  <div class="sig dark"><span class="m">RB</span><span class="n">RÉGIS BLANCHET<small>SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span><span class="r">SOURCE : INSEE<br>POPULATIONS DE RÉFÉRENCE</span></div>
+  <div class="sig dark"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span><span class="r">SOURCE : INSEE<br>POPULATIONS DE RÉFÉRENCE</span></div>
 </div>
 
 <!-- 5 Un dossier en clair — POLT -->
@@ -134,7 +136,7 @@ body{background:#888;display:flex;flex-wrap:wrap;gap:40px;padding:40px}
     <div class="fact"><b>485 M€</b><span>financés par l’État pour ces trains</span></div>
     <div class="fact"><b>Châteauroux</b><span>arrêt de la ligne Paris–Orléans–Limoges–Toulouse</span></div>
   </div>
-  <div class="sig"><span class="m">RB</span><span class="n">RÉGIS BLANCHET<small>SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span><span class="r">SOURCE : PRÉFECTURE<br>12/09/2025</span></div>
+  <div class="sig"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span><span class="r">SOURCE : PRÉFECTURE<br>12/09/2025</span></div>
 </div>
 
 <!-- 6 Premières semaines -->
@@ -146,14 +148,14 @@ body{background:#888;display:flex;flex-wrap:wrap;gap:40px;padding:40px}
     <div><b>5 oct.</b><span>Rejoint le groupe Union Centriste et Indépendants</span></div>
     <div><b>6 oct.</b><span>Membre de la commission de l’aménagement du territoire</span></div>
   </div></div>
-  <div class="sig"><span class="m">RB</span><span class="n">RÉGIS BLANCHET<small>SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span><span class="r">PHOTO : JLPC, CC BY-SA 3.0</span></div>
+  <div class="sig"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span><span class="r">PHOTO : JLPC, CC BY-SA 3.0</span></div>
 </div>
 
 <!-- 7 Brenne -->
 <div class="post" id="brenne">
   <div class="ph"><img src="photos/brenne_merrouge.jpg" alt=""></div>
   <div class="stack"><div class="kick" style="color:var(--bronze-l)">Regard sur l’Indre · la Brenne</div><div class="t">L’étang de la Mer Rouge, <i>à Rosnay</i></div><div class="credit">Photo : Bert76, CC BY-SA 3.0 · Wikimedia Commons</div></div>
-  <div class="sig"><span class="m">RB</span><span class="n">RÉGIS BLANCHET<small>SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span><span class="r">PARC NATUREL RÉGIONAL<br>DE LA BRENNE</span></div>
+  <div class="sig"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span><span class="r">PARC NATUREL RÉGIONAL<br>DE LA BRENNE</span></div>
 </div>
 
 <!-- 8 Citation -->
@@ -162,7 +164,7 @@ body{background:#888;display:flex;flex-wrap:wrap;gap:40px;padding:40px}
   <div class="pad q" style="top:360px">Je n’ai jamais servi qu’une cause&nbsp;: l’Indre.</div>
   <div class="pad" style="top:780px"><div class="rule" style="background:#fff"></div></div>
   <div class="pad" style="top:830px;font:600 30px/1.5 'IN';letter-spacing:.04em;color:#F3DCDF">Régis Blanchet<br><span style="font-weight:400">Profession de foi, élection sénatoriale du 27 septembre 2026</span></div>
-  <div class="sig" style="border-color:rgba(255,255,255,.3)"><span class="m" style="color:var(--bordeaux)">RB</span><span class="n">RÉGIS BLANCHET<small style="color:#F3DCDF">SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span></div>
+  <div class="sig" style="border-color:rgba(255,255,255,.3)"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span></div>
 </div>
 
 <!-- 9 Episode 2 -->
@@ -173,6 +175,6 @@ body{background:#888;display:flex;flex-wrap:wrap;gap:40px;padding:40px}
   <div class="pad h" style="top:580px;color:#fff">Une question écrite,<br><i>comment ça marche&nbsp;?</i></div>
   <div class="pad" style="top:840px"><div class="rule"></div></div>
   <div class="pad p" style="top:890px;color:#D9E0EA">Un sénateur interroge un ministre ; la réponse est publiée au Journal officiel. Un outil simple pour faire remonter une situation locale.</div>
-  <div class="sig"><span class="m">RB</span><span class="n">RÉGIS BLANCHET<small>SÉNATEUR DE L’INDRE</small></span><span class="lg"><img src="logos/senat.png" alt="Sénat"><img src="logos/union-centriste.png" alt="Union Centriste et Indépendants"></span><span class="r">FAIRE DÉFILER →</span></div>
+  <div class="sig"><span class="nm"><span class="pr">Régis</span><span class="no">BLANCHET</span><span class="fn">SÉNATEUR DE L’INDRE</span></span><span class="r">FAIRE DÉFILER →</span></div>
 </div>
 </body></html>

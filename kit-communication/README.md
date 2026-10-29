@@ -27,6 +27,20 @@ La [signature de courriel](modele-signature-email.html) est aussi fournie avec d
 
 Les fichiers SVG s’ouvrent dans Inkscape, Illustrator ou un éditeur de texte. Les champs entre crochets doivent être remplacés. Les polices Playfair Display et Nunito Sans sont incluses dans l’archive avec leurs licences OFL ; les installer localement pour retrouver le rendu attendu dans un logiciel de création.
 
+## Modèle validé — prise de position (29 octobre 2026)
+
+| Fichier | Usage | Format |
+| --- | --- | --- |
+| [exemples/modele-prise-de-position.html](exemples/modele-prise-de-position.html) | Annonce d'un vote ou d'une position : signature manuscrite « Régis BLANCHET » en haut, photo en grand, titre en bas, sans logo ni chiffres (ils vont dans la légende) | Post 1080 × 1350 et story 1080 × 1920 |
+
+Exemple réel : `exemples/posts-png/prise-de-position-post.png` et `-story.png`. Règles détaillées : `Documents\Sénat\Charte_graphique\CHARTE_GRAPHIQUE.md` et page 3 de `output/pdf/04_formats_reseaux_regis_blanchet.pdf`.
+
+Depuis le 29 octobre 2026, les neuf publications d'exemple portent la même signature (« Régis BLANCHET · Sénateur de l'Indre »), sans monogramme ni logo. La suppléante n'apparaît plus. Aucune fréquence de publication n'est indiquée.
+
+## Organisation et modération (29 octobre 2026)
+
+Circuit de publication en cinq étapes, règles de réponse aux commentaires, réponses types, mise en ordre des comptes : [ORGANISATION_ET_MODERATION.md](ORGANISATION_ET_MODERATION.md) et `output/pdf/06_organisation_regis_blanchet.pdf` (source `exemples/kit3.html`).
+
 ## Références de la charte (mise à jour du 22 octobre 2026)
 
 La charte suit le journal de campagne et la lettre de candidature transmis par le sénateur (voir `Documents\Sénat\Charte_graphique\CHARTE_GRAPHIQUE.md`). Bleu nuit `#24365A`, rouge `#B7303C` (surtitres, filets), caramel `#BD8751` (onglet RB, citations), brun `#5D3F2D` (courriers), ivoire `#F9F8F5`. Titres en Playfair Display, textes en Nunito Sans (équivalents libres d'Abril Display et d'Avenir). Monogramme RB extrait du journal (`logos/`).

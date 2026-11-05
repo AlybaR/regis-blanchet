@@ -18,6 +18,42 @@ window.TRAVAUX = {
  },
  "activites": [
   {
+   "id": "6b114149a5",
+   "date": "2026-11-04",
+   "heure": "16:35",
+   "type": "Séance publique",
+   "titre": "Déclaration du Gouvernement puis débat 50-1 Orientation des lycéens",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "75ccc779ab",
+   "date": "2026-11-04",
+   "heure": "15:00",
+   "type": "Séance publique",
+   "titre": "Questions d'actualité au gouvernement",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "855cfdd2b7",
+   "date": "2026-11-04",
+   "heure": "08:00",
+   "type": "Commission",
+   "titre": "Réunion de la commission de l'aménagement du territoire et du développement durable",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "e9604442fd",
+   "date": "2026-11-03",
+   "heure": "14:30",
+   "type": "Séance publique",
+   "titre": "Explications de vote sur l'ensemble",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
    "id": "78f7f99c76",
    "date": "2026-10-28",
    "heure": "16:30",
@@ -127,8 +163,8 @@ window.TRAVAUX = {
   }
  ],
  "questions": [],
- "mis_a_jour_le": "2026-10-29",
- "mis_a_jour_le_fr": "29 octobre 2026",
+ "mis_a_jour_le": "2026-11-05",
+ "mis_a_jour_le_fr": "5 novembre 2026",
  "sources": [
   {
    "libelle": "Fiche officielle du sénateur",

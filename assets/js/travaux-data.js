@@ -18,6 +18,24 @@ window.TRAVAUX = {
  },
  "activites": [
   {
+   "id": "55564794a9",
+   "date": "2026-11-17",
+   "heure": "14:30",
+   "type": "Séance publique",
+   "titre": "Suite PLFSS pour 2027",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "f049155f28",
+   "date": "2026-11-17",
+   "heure": "13:45",
+   "type": "Commission",
+   "titre": "Réunion de la commission de l'aménagement du territoire et du développement durable",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
    "id": "6b114149a5",
    "date": "2026-11-04",
    "heure": "16:35",
@@ -163,8 +181,8 @@ window.TRAVAUX = {
   }
  ],
  "questions": [],
- "mis_a_jour_le": "2026-11-05",
- "mis_a_jour_le_fr": "5 novembre 2026",
+ "mis_a_jour_le": "2026-11-18",
+ "mis_a_jour_le_fr": "18 novembre 2026",
  "sources": [
   {
    "libelle": "Fiche officielle du sénateur",

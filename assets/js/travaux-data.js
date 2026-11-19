@@ -18,6 +18,33 @@ window.TRAVAUX = {
  },
  "activites": [
   {
+   "id": "dc2301ec55",
+   "date": "2026-11-18",
+   "heure": "16:40",
+   "type": "Séance publique",
+   "titre": "Explications de vote sur l'ensemble du PLFSS pour 2027",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "bc9a58ee15",
+   "date": "2026-11-18",
+   "heure": "15:00",
+   "type": "Séance publique",
+   "titre": "Questions d'actualité au gouvernement",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
+   "id": "5699f01b37",
+   "date": "2026-11-18",
+   "heure": "08:00",
+   "type": "Commission",
+   "titre": "",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
    "id": "55564794a9",
    "date": "2026-11-17",
    "heure": "14:30",
@@ -181,8 +208,8 @@ window.TRAVAUX = {
   }
  ],
  "questions": [],
- "mis_a_jour_le": "2026-11-18",
- "mis_a_jour_le_fr": "18 novembre 2026",
+ "mis_a_jour_le": "2026-11-19",
+ "mis_a_jour_le_fr": "19 novembre 2026",
  "sources": [
   {
    "libelle": "Fiche officielle du sénateur",

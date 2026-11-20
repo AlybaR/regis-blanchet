@@ -18,6 +18,15 @@ window.TRAVAUX = {
  },
  "activites": [
   {
+   "id": "0ad1f6c64b",
+   "date": "2026-11-19",
+   "heure": "08:30",
+   "type": "Délégation",
+   "titre": "Réunion plénière",
+   "source": "https://www.senat.fr/calendrier_activite/?matricule=21652W",
+   "source_libelle": "Tableau des activités principales, senat.fr"
+  },
+  {
    "id": "dc2301ec55",
    "date": "2026-11-18",
    "heure": "16:40",
@@ -207,9 +216,21 @@ window.TRAVAUX = {
    "source_libelle": "Tableau des activités principales, senat.fr"
   }
  ],
- "questions": [],
- "mis_a_jour_le": "2026-11-19",
- "mis_a_jour_le_fr": "19 novembre 2026",
+ "questions": [
+  {
+   "id": "SEQ261110781",
+   "date": "2026-11-19",
+   "type": "Question écrite",
+   "titre": "Fonds prairies",
+   "ministere": "Agriculture, agro-alimentaire et souveraineté alimentaire",
+   "statut": "En cours",
+   "reponse_le": null,
+   "source": "https://www.senat.fr/questions/base/2026/qSEQ261110781.html",
+   "source_libelle": "Question n° 10781, senat.fr"
+  }
+ ],
+ "mis_a_jour_le": "2026-11-20",
+ "mis_a_jour_le_fr": "20 novembre 2026",
  "sources": [
   {
    "libelle": "Fiche officielle du sénateur",
